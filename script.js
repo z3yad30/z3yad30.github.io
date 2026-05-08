@@ -4,7 +4,6 @@
   const moonIcon = '<i class="fas fa-moon"></i>';
   const sunIcon = '<i class="fas fa-sun"></i>';
   
-  // Check localStorage or system preference
   const storedTheme = localStorage.getItem('theme');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   
@@ -24,7 +23,6 @@
     });
   }
   
-  // optional: add any smooth external link behavior
   const allLinks = document.querySelectorAll('a[href^="http"]');
   allLinks.forEach(link => {
     if (link.hostname !== window.location.hostname) {
@@ -33,7 +31,6 @@
     }
   });
   
-  // footer current year update (optional)
   const footerYear = document.querySelector('footer p');
   if (footerYear) {
     const currentYear = new Date().getFullYear();
