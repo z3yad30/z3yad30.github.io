@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Portfolio of Zeyad Mohamed Ahmed Refaey — Data Science student specializing in ML, NLP, and LLM applications.">
+  <title>Zeyad Refaey | Data Science Portfolio</title>
+  <!-- Google Fonts & Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- theme toggle button (dark/light) -->
+  <div class="theme-toggle-wrapper">
+    <button id="theme-toggle" class="theme-btn" aria-label="Dark/Light mode">
+      <i class="fas fa-moon"></i>
+    </button>
+  </div>
+
+  <div class="container">
+    <!-- header / hero -->
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Zeyad Mohamed <span>Refaey</span></h1>
+        <div class="hero-tagline">Data Science Student | ML Engineer | RAG & LLM Developer</div>
+        <div class="contact-bar">
+          <a href="mailto:zeyad.mo.refaey@gmail.com"><i class="fas fa-envelope"></i> zeyad.mo.refaey@gmail.com</a>
+          <a href="tel:+201026887363"><i class="fas fa-phone-alt"></i> +20 102 688 7363</a>
+          <a href="#" target="_blank"><i class="fas fa-map-marker-alt"></i> Cairo, Egypt</a>
+          <a href="https://linkedin.com/in/zeyadrefaey" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/z3yad30" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- professional summary -->
+    <section class="summary-card">
+      <h2><i class="fas fa-user-astronaut"></i> Professional Summary</h2>
+      <p>Results-driven Data Science student with hands-on experience in machine learning, deep learning, and NLP. Proven track record of developing and deploying end-to-end ML solutions including sentiment analysis systems, RAG-powered AI assistants, and customer segmentation models. Skilled in Python, TensorFlow, PyTorch, and FastAPI with expertise in building production-ready applications. Completed 100+ hour advanced training in Generative AI, Deep Learning, and Building RAG Agents with LLMs through NVIDIA DLI programs. Strong foundation in data analysis, statistical modeling, and interactive dashboard creation.</p>
+    </section>
+
+    <div class="two-col-grid">
+      <!-- left: education & experience -->
+      <div class="left-col">
+        <!-- education -->
+        <div class="info-box">
+          <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+          <div class="edu-item">
+            <h3>Bachelor of Science in Data Science</h3>
+            <p class="institution">Egyptian Chinese University (ECU) | Faculty of Computers and Information Technology</p>
+            <p class="date">Expected Graduation: 2027</p>
+          </div>
+        </div>
+
+        <!-- work experience (Fawry) -->
+        <div class="info-box">
+          <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+          <div class="exp-item">
+            <div class="exp-header">
+              <h3>Data Science Intern @ Fawry</h3>
+              <span class="exp-date">Dec 2025 – Jan 2026 | Cairo, Egypt (Onsite)</span>
+            </div>
+            <ul>
+              <li>Developed NLP-powered sentiment analysis system using LSTM and GRU architectures in TensorFlow/Keras, deployed via REST API using Flask and FastAPI for real-time predictions.</li>
+              <li>Performed financial customer segmentation by applying K-Means clustering & elbow method to identify 5 distinct behavioral patterns from transactional data.</li>
+              <li>Built and optimized a feedforward neural network for handwritten digit classification on MNIST dataset (high accuracy through normalization & categorical cross-entropy).</li>
+              <li>Engineered predictive models for retail customer spending using Linear Regression with extensive feature engineering and exploratory data analysis.</li>
+              <li>Conducted comprehensive data cleaning and visualization using Pandas, NumPy, and Seaborn to analyze complex transaction behaviors and generate actionable business insights.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- additional training / internships (ITI + NTI) -->
+        <div class="info-box">
+          <h2><i class="fas fa-code-branch"></i> Training & Professional Development</h2>
+          <div class="training-item">
+            <h3>Generative AI Intern - Advanced Level</h3>
+            <p>Information Technology Institute (ITI) – NVIDIA DLI Program | Feb 2026 | 100 Hours</p>
+            <p class="training-desc">Deep Learning Basics, Building RAG Agents With LLMs, and Capstone Project – hands-on experience with sophisticated RAG agents.</p>
+          </div>
+          <div class="training-item">
+            <h3>Data Analysis Intern</h3>
+            <p>National Telecommunication Institute (NTI) | Jun – Sep 2025 | 90 Hours</p>
+            <p class="training-desc">Data cleaning, exploratory analysis, dashboards using Python (Pandas, NumPy, Matplotlib), SQL, Power BI, SSIS.</p>
+          </div>
+          <div class="training-item">
+            <h3>Generative AI Intern - Beginner Level</h3>
+            <p>Information Technology Institute (ITI) – NVIDIA DLI Program | Sep 2025 | 35 Hours</p>
+            <p class="training-desc">Generative AI, LLM development, Prompt Engineering, and Retrieval Augmented Generation (RAG).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- right: skills & certifications -->
+      <div class="right-col">
+        <div class="info-box">
+          <h2><i class="fas fa-cogs"></i> Technical Skills</h2>
+          <div class="skills-wrapper">
+            <div class="skill-cat">
+              <h4>Languages</h4>
+              <div class="skill-tags"><span>Python</span><span>SQL</span><span>R</span></div>
+            </div>
+            <div class="skill-cat">
+              <h4>ML/DL Frameworks</h4>
+              <div class="skill-tags"><span>TensorFlow</span><span>Keras</span><span>PyTorch</span><span>scikit-learn</span><span>Hugging Face</span></div>
+            </div>
+            <div class="skill-cat">
+              <h4>Data & Visualization</h4>
+              <div class="skill-tags"><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span><span>Power BI</span></div>
+            </div>
+            <div class="skill-cat">
+              <h4>NLP & LLMs</h4>
+              <div class="skill-tags"><span>LangChain</span><span>Sentence Transformers</span><span>Prompt Engineering</span><span>RAG</span><span>RoBERTa</span><span>LSTM/GRU</span></div>
+            </div>
+            <div class="skill-cat">
+              <h4>Web & Deployment</h4>
+              <div class="skill-tags"><span>FastAPI</span><span>Flask</span><span>Streamlit</span><span>Gradio</span><span>Git</span></div>
+            </div>
+            <div class="skill-cat">
+              <h4>Databases & Tools</h4>
+              <div class="skill-tags"><span>Chroma DB</span><span>Vector Stores</span><span>SSIS</span><span>OpenRouter API</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- certifications -->
+        <div class="info-box">
+          <h2><i class="fas fa-certificate"></i> Certifications</h2>
+          <ul class="cert-list">
+            <li><i class="fas fa-check-circle"></i> Building RAG Agents with LLMs – NVIDIA Deep Learning Institute</li>
+            <li><i class="fas fa-check-circle"></i> Building LLM Applications With Prompt Engineering – NVIDIA DLI</li>
+            <li><i class="fas fa-check-circle"></i> Deep Learning With PyTorch: From Concepts to Applications – Mahara Tech</li>
+            <li><i class="fas fa-check-circle"></i> AI and Machine Learning – Sprints</li>
+            <li><i class="fas fa-check-circle"></i> Introduction to Deep Learning – Mahara Tech</li>
+            <li><i class="fas fa-check-circle"></i> AI for All: From Basics to GenAI Practice – NVIDIA Academy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects section (highlight main 3) -->
+    <section class="projects-section">
+      <h2><i class="fas fa-rocket"></i> Featured Projects</h2>
+      <div class="projects-grid">
+        <!-- project 1 -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-file-contract"></i></div>
+          <h3>Smart Contract Summary & Q&A Assistant</h3>
+          <p class="project-tech">Python · LangChain · RAG · OpenRouter · Gradio · Chroma DB</p>
+          <ul>
+            <li>End-to-end RAG system for legal document analysis (PDF/DOC), intelligent chunking + semantic search.</li>
+            <li>Local vector store with sentence transformers & Chroma DB for accurate retrieval.</li>
+            <li>Conversational Q&A interface with inline citations using LangChain LCEL & AuroraLLM.</li>
+            <li>Production-grade Gradio web app with document upload, chat history & one-click summarization.</li>
+          </ul>
+          <a href="https://github.com/z3yad30/Contract-Summary-Q-A-Assistant" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+        </div>
+        <!-- project 2 -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-film"></i></div>
+          <h3>IMDB Sentiment Analysis API</h3>
+          <p class="project-tech">RoBERTa · FastAPI · Transformers · PyTorch · HTML/CSS/JS</p>
+          <ul>
+            <li>Production-ready REST API using fine-tuned RoBERTa-large, 93–95% accuracy on IMDB test dataset (25k reviews).</li>
+            <li>FastAPI backend with Pydantic validation, single & batch predictions (up to 100 reviews) + confidence scoring.</li>
+            <li>Responsive frontend with real-time analysis, probability distribution visualization & mobile optimization.</li>
+            <li>GPU/CPU-agnostic inference pipeline, error handling & health monitoring endpoints.</li>
+          </ul>
+          <a href="https://github.com/z3yad30/roberta-large-sentiment-imdb" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+        </div>
+        <!-- project 3 -->
+        <div class="project-card">
+          <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Bank Customer Segmentation & Clustering</h3>
+          <p class="project-tech">K-Means · PCA · Streamlit · scikit-learn · Plotly</p>
+          <ul>
+            <li>Unsupervised ML on 45,211 bank customers → identified 5 behavioral segments for targeted marketing.</li>
+            <li>Compared K-Means, DBSCAN & Hierarchical Clustering with evaluation metrics (silhouette, Davies-Bouldin).</li>
+            <li>PCA for dimensionality reduction + 2D visualizations of segments.</li>
+            <li>Interactive Streamlit web app for real-time classification & segment profiling.</li>
+          </ul>
+          <a href="https://github.com/z3yad30/bank-customer-segmentation-clustering" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <p>© 2026 Zeyad Mohamed Ahmed Refaey — Built with <i class="fas fa-heart"></i> for GitHub Pages</p>
+      <div class="footer-links">
+        <a href="https://github.com/z3yad30" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://linkedin.com/in/zeyad-refaey" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="mailto:zeyad.mo.refaey@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
