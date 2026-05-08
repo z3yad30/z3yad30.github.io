@@ -1,4 +1,4 @@
-/* style.css – modern portfolio with dark mode support */
+/* style.css – modern portfolio with dark mode support & profile image */
 :root {
   --bg-body: #f8fafc;
   --bg-card: #ffffff;
@@ -70,7 +70,7 @@ body {
   border-color: var(--accent);
 }
 
-/* hero section */
+/* hero section with image */
 .hero {
   background: var(--bg-card);
   border-radius: 2rem;
@@ -78,6 +78,29 @@ body {
   margin-bottom: 2rem;
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--border-light);
+}
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.hero-image {
+  flex-shrink: 0;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--accent);
+  box-shadow: var(--shadow-sm);
+}
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-content {
+  flex: 1;
 }
 .hero h1 {
   font-size: 2.6rem;
@@ -148,7 +171,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.8rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 @media (max-width: 900px) {
   .two-col-grid {
@@ -348,12 +371,18 @@ footer {
   body {
     padding: 1rem;
   }
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
   .hero h1 {
     font-size: 1.9rem;
   }
+  .hero-tagline {
+    text-align: left;
+  }
   .contact-bar {
-    flex-direction: column;
-    gap: 0.5rem;
+    justify-content: center;
   }
   .projects-grid {
     grid-template-columns: 1fr;
@@ -368,11 +397,6 @@ footer {
 /* Add space between stacked info boxes (inside same column) */
 .info-box:not(:last-child) {
   margin-bottom: 1.8rem;
-}
-
-/* Ensure consistent spacing after the two-column grid */
-.two-col-grid {
-  margin-bottom: 2rem;
 }
 
 /* Add gap between major sections (summary, projects, footer) */
