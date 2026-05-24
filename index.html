@@ -3,206 +3,315 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="Portfolio of Zeyad Mohamed Ahmed Refaey — Data Science student specializing in ML, NLP, and LLM applications.">
-  <title>Zeyad Refaey | Data Science Portfolio</title>
-  <!-- Google Fonts & Font Awesome -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta name="description" content="Zeyad Refaey — Data Science & ML Engineer. Building AI, LLMs, and cool stuff.">
+  <title>Zeyad Refaey | AI Engineer & Creator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- theme toggle button (dark/light) -->
-  <div class="theme-toggle-wrapper">
-    <button id="theme-toggle" class="theme-btn" aria-label="Dark/Light mode">
-      <i class="fas fa-moon"></i>
-    </button>
+  <!-- Animated background mesh -->
+  <div class="bg-mesh">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
   </div>
 
+  <!-- Navigation / Theme -->
+  <nav class="topbar">
+    <div class="logo">ZR.</div>
+    <div class="nav-right">
+      <span class="status"><span class="status-dot"></span> Open to work</span>
+      <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+        <i class="fas fa-sun"></i>
+      </button>
+    </div>
+  </nav>
+
   <div class="container">
-    <!-- header / hero with image -->
+
+    <!-- HERO -->
     <header class="hero">
+      <div class="hero-glow"></div>
       <div class="hero-inner">
         <div class="hero-image">
-          <!-- Replace 'profile.jpg' with your actual image name (inside /images folder) -->
           <img src="images/profile.png" alt="Zeyad Mohamed Refaey">
+          <div class="image-ring"></div>
         </div>
         <div class="hero-content">
-          <h1>Zeyad Mohamed <span>Refaey</span></h1>
-          <div class="hero-tagline">Data Science Student | ML Engineer | RAG & LLM Developer</div>
-          <div class="contact-bar">
-            <a href="mailto:zeyad.mo.refaey@gmail.com"><i class="fas fa-envelope"></i> zeyad.mo.refaey@gmail.com</a>
-            <a href="tel:+201026887363"><i class="fas fa-phone-alt"></i> +20 102 688 7363</a>
-            <a href="#" target="_blank"><i class="fas fa-map-marker-alt"></i> Cairo, Egypt</a>
-            <a href="https://linkedin.com/in/zeyadrefaey" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://github.com/z3yad30" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <div class="hero-eyebrow">✦ Data Science & AI Engineer</div>
+          <h1 class="gradient-text">Zeyad <br><span>Refaey</span></h1>
+          <div class="hero-tagline" id="typewriter"></div>
+          <div class="hero-actions">
+            <a href="mailto:zeyad.mo.refaey@gmail.com" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Hire Me
+            </a>
+            <a href="https://github.com/z3yad30" target="_blank" class="btn btn-ghost">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+          <div class="contact-pills">
+            <a href="tel:+201026887363" class="pill"><i class="fas fa-phone"></i> +20 102 688 7363</a>
+            <a href="#" class="pill"><i class="fas fa-location-dot"></i> Cairo, Egypt</a>
+            <a href="https://linkedin.com/in/zeyadrefaey" target="_blank" class="pill"><i class="fab fa-linkedin"></i> LinkedIn</a>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- professional summary -->
-    <section class="summary-card">
-      <h2><i class="fas fa-user-astronaut"></i> Professional Summary</h2>
-      <p>Results-driven Data Science student with hands-on experience in machine learning, deep learning, and NLP. Proven track record of developing and deploying end-to-end ML solutions including sentiment analysis systems, RAG-powered AI assistants, and customer segmentation models. Skilled in Python, TensorFlow, PyTorch, and FastAPI with expertise in building production-ready applications. Completed 100+ hour advanced training in Generative AI, Deep Learning, and Building RAG Agents with LLMs through NVIDIA DLI programs. Strong foundation in data analysis, statistical modeling, and interactive dashboard creation.</p>
+    <!-- SUMMARY -->
+    <section class="glass-card reveal">
+      <div class="card-header">
+        <div class="icon-bubble"><i class="fas fa-user-astronaut"></i></div>
+        <h2>About Me</h2>
+      </div>
+      <p class="summary-text">
+        Results-driven Data Science student with hands-on experience in machine learning, deep learning, and NLP. 
+        Proven track record of developing and deploying end-to-end ML solutions including sentiment analysis systems, 
+        RAG-powered AI assistants, and customer segmentation models. Skilled in Python, TensorFlow, PyTorch, and FastAPI 
+        with expertise in building production-ready applications. Completed 100+ hour advanced training in Generative AI, 
+        Deep Learning, and Building RAG Agents with LLMs through NVIDIA DLI programs. Strong foundation in data analysis, 
+        statistical modeling, and interactive dashboard creation.
+      </p>
+      <div class="stats-row">
+        <div class="stat"><span class="stat-num">100+</span><span class="stat-label">Hours NVIDIA DLI</span></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Featured Projects</span></div>
+        <div class="stat"><span class="stat-num">5+</span><span class="stat-label">ML Models Deployed</span></div>
+      </div>
     </section>
 
     <div class="two-col-grid">
-      <!-- left: education & experience -->
+      <!-- LEFT COLUMN -->
       <div class="left-col">
-        <!-- education -->
-        <div class="info-box">
-          <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+
+        <section class="glass-card reveal">
+          <div class="card-header">
+            <div class="icon-bubble pink"><i class="fas fa-graduation-cap"></i></div>
+            <h2>Education</h2>
+          </div>
           <div class="edu-item">
             <h3>Bachelor of Science in Data Science</h3>
-            <p class="institution">Egyptian Chinese University (ECU) | Faculty of Computers and Information Technology</p>
-            <p class="date">Expected Graduation: 2027</p>
+            <p class="institution">Egyptian Chinese University (ECU)</p>
+            <p class="date">Faculty of Computers & IT · Expected 2027</p>
           </div>
-        </div>
+        </section>
 
-        <!-- work experience (Fawry) -->
-        <div class="info-box">
-          <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+        <section class="glass-card reveal">
+          <div class="card-header">
+            <div class="icon-bubble cyan"><i class="fas fa-briefcase"></i></div>
+            <h2>Work Experience</h2>
+          </div>
           <div class="exp-item">
             <div class="exp-header">
-              <h3>Data Science Intern @ Fawry</h3>
-              <span class="exp-date">Dec 2025 – Jan 2026 | Cairo, Egypt (Onsite)</span>
+              <div class="exp-title">
+                <h3>Data Science Intern</h3>
+                <span class="badge">@ Fawry</span>
+              </div>
+              <span class="exp-date">Dec 2025 – Jan 2026</span>
             </div>
-            <ul>
-              <li>Developed NLP-powered sentiment analysis system using LSTM and GRU architectures in TensorFlow/Keras, deployed via REST API using Flask and FastAPI for real-time predictions.</li>
-              <li>Performed financial customer segmentation by applying K-Means clustering & elbow method to identify 5 distinct behavioral patterns from transactional data.</li>
-              <li>Built and optimized a feedforward neural network for handwritten digit classification on MNIST dataset (high accuracy through normalization & categorical cross-entropy).</li>
-              <li>Engineered predictive models for retail customer spending using Linear Regression with extensive feature engineering and exploratory data analysis.</li>
-              <li>Conducted comprehensive data cleaning and visualization using Pandas, NumPy, and Seaborn to analyze complex transaction behaviors and generate actionable business insights.</li>
+            <ul class="exp-list">
+              <li><span class="bullet"></span>Developed NLP-powered sentiment analysis system using LSTM and GRU architectures in TensorFlow/Keras, deployed via REST API using Flask and FastAPI for real-time predictions.</li>
+              <li><span class="bullet"></span>Performed financial customer segmentation by applying K-Means clustering & elbow method to identify 5 distinct behavioral patterns from transactional data.</li>
+              <li><span class="bullet"></span>Built and optimized a feedforward neural network for handwritten digit classification on MNIST dataset.</li>
+              <li><span class="bullet"></span>Engineered predictive models for retail customer spending using Linear Regression with extensive feature engineering.</li>
+              <li><span class="bullet"></span>Conducted comprehensive data cleaning and visualization using Pandas, NumPy, and Seaborn.</li>
             </ul>
           </div>
-        </div>
+        </section>
 
-        <!-- additional training / internships (ITI + NTI) -->
-        <div class="info-box">
-          <h2><i class="fas fa-code-branch"></i> Training & Professional Development</h2>
-          <div class="training-item">
-            <h3>Generative AI Intern - Advanced Level</h3>
-            <p>Information Technology Institute (ITI) – NVIDIA DLI Program | Feb 2026 | 100 Hours</p>
-            <p class="training-desc">Deep Learning Basics, Building RAG Agents With LLMs, and Capstone Project – hands-on experience with sophisticated RAG agents.</p>
+        <section class="glass-card reveal">
+          <div class="card-header">
+            <div class="icon-bubble purple"><i class="fas fa-code-branch"></i></div>
+            <h2>Training & Development</h2>
           </div>
-          <div class="training-item">
-            <h3>Data Analysis Intern</h3>
-            <p>National Telecommunication Institute (NTI) | Jun – Sep 2025 | 90 Hours</p>
-            <p class="training-desc">Data cleaning, exploratory analysis, dashboards using Python (Pandas, NumPy, Matplotlib), SQL, Power BI, SSIS.</p>
+          <div class="training-list">
+            <div class="training-item">
+              <div class="training-head">
+                <h3>Generative AI Intern — Advanced</h3>
+                <span class="training-tag">ITI · NVIDIA DLI</span>
+              </div>
+              <p class="training-meta">Feb 2026 · 100 Hours</p>
+              <p class="training-desc">Deep Learning Basics, Building RAG Agents With LLMs, and Capstone Project.</p>
+            </div>
+            <div class="training-item">
+              <div class="training-head">
+                <h3>Data Analysis Intern</h3>
+                <span class="training-tag">NTI</span>
+              </div>
+              <p class="training-meta">Jun – Sep 2025 · 90 Hours</p>
+              <p class="training-desc">Data cleaning, EDA, dashboards using Python, SQL, Power BI, SSIS.</p>
+            </div>
+            <div class="training-item">
+              <div class="training-head">
+                <h3>Generative AI Intern — Beginner</h3>
+                <span class="training-tag">ITI · NVIDIA DLI</span>
+              </div>
+              <p class="training-meta">Sep 2025 · 35 Hours</p>
+              <p class="training-desc">Generative AI, LLM development, Prompt Engineering, and RAG.</p>
+            </div>
           </div>
-          <div class="training-item">
-            <h3>Generative AI Intern - Beginner Level</h3>
-            <p>Information Technology Institute (ITI) – NVIDIA DLI Program | Sep 2025 | 35 Hours</p>
-            <p class="training-desc">Generative AI, LLM development, Prompt Engineering, and Retrieval Augmented Generation (RAG).</p>
-          </div>
-        </div>
+        </section>
+
       </div>
 
-      <!-- right: skills & certifications -->
+      <!-- RIGHT COLUMN -->
       <div class="right-col">
-        <div class="info-box">
-          <h2><i class="fas fa-cogs"></i> Technical Skills</h2>
-          <div class="skills-wrapper">
-            <div class="skill-cat">
+
+        <section class="glass-card reveal">
+          <div class="card-header">
+            <div class="icon-bubble yellow"><i class="fas fa-cogs"></i></div>
+            <h2>Tech Stack</h2>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-block">
               <h4>Languages</h4>
-              <div class="skill-tags"><span>Python</span><span>SQL</span><span>R</span></div>
+              <div class="skill-pills">
+                <span class="spill">Python</span><span class="spill">SQL</span><span class="spill">R</span>
+              </div>
             </div>
-            <div class="skill-cat">
-              <h4>ML/DL Frameworks</h4>
-              <div class="skill-tags"><span>TensorFlow</span><span>Keras</span><span>PyTorch</span><span>scikit-learn</span><span>Hugging Face</span></div>
+            <div class="skill-block">
+              <h4>ML / DL</h4>
+              <div class="skill-pills">
+                <span class="spill">TensorFlow</span><span class="spill">Keras</span><span class="spill">PyTorch</span><span class="spill">scikit-learn</span><span class="spill">Hugging Face</span>
+              </div>
             </div>
-            <div class="skill-cat">
-              <h4>Data & Visualization</h4>
-              <div class="skill-tags"><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span><span>Power BI</span></div>
+            <div class="skill-block">
+              <h4>Data & Viz</h4>
+              <div class="skill-pills">
+                <span class="spill">Pandas</span><span class="spill">NumPy</span><span class="spill">Matplotlib</span><span class="spill">Seaborn</span><span class="spill">Power BI</span>
+              </div>
             </div>
-            <div class="skill-cat">
+            <div class="skill-block">
               <h4>NLP & LLMs</h4>
-              <div class="skill-tags"><span>LangChain</span><span>Sentence Transformers</span><span>Prompt Engineering</span><span>RAG</span><span>RoBERTa</span><span>LSTM/GRU</span></div>
+              <div class="skill-pills">
+                <span class="spill">LangChain</span><span class="spill">Sentence Transformers</span><span class="spill">Prompt Engineering</span><span class="spill">RAG</span><span class="spill">RoBERTa</span><span class="spill">LSTM/GRU</span>
+              </div>
             </div>
-            <div class="skill-cat">
-              <h4>Web & Deployment</h4>
-              <div class="skill-tags"><span>FastAPI</span><span>Flask</span><span>Streamlit</span><span>Gradio</span><span>Git</span></div>
+            <div class="skill-block">
+              <h4>Web & Deploy</h4>
+              <div class="skill-pills">
+                <span class="spill">FastAPI</span><span class="spill">Flask</span><span class="spill">Streamlit</span><span class="spill">Gradio</span><span class="spill">Git</span>
+              </div>
             </div>
-            <div class="skill-cat">
-              <h4>Databases & Tools</h4>
-              <div class="skill-tags"><span>Chroma DB</span><span>Vector Stores</span><span>SSIS</span><span>OpenRouter API</span></div>
+            <div class="skill-block">
+              <h4>Tools</h4>
+              <div class="skill-pills">
+                <span class="spill">Chroma DB</span><span class="spill">Vector Stores</span><span class="spill">SSIS</span><span class="spill">OpenRouter API</span>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <!-- certifications -->
-        <div class="info-box">
-          <h2><i class="fas fa-certificate"></i> Certifications</h2>
-          <ul class="cert-list">
-            <li><i class="fas fa-check-circle"></i> Building RAG Agents with LLMs – NVIDIA Deep Learning Institute</li>
-            <li><i class="fas fa-check-circle"></i> Building LLM Applications With Prompt Engineering – NVIDIA DLI</li>
-            <li><i class="fas fa-check-circle"></i> Deep Learning With PyTorch: From Concepts to Applications – Mahara Tech</li>
-            <li><i class="fas fa-check-circle"></i> AI and Machine Learning – Sprints</li>
-            <li><i class="fas fa-check-circle"></i> Introduction to Deep Learning – Mahara Tech</li>
-            <li><i class="fas fa-check-circle"></i> AI for All: From Basics to GenAI Practice – NVIDIA Academy</li>
+        <section class="glass-card reveal">
+          <div class="card-header">
+            <div class="icon-bubble green"><i class="fas fa-certificate"></i></div>
+            <h2>Certifications</h2>
+          </div>
+          <ul class="cert-grid">
+            <li><i class="fas fa-medal"></i> Building RAG Agents with LLMs — NVIDIA DLI</li>
+            <li><i class="fas fa-medal"></i> Building LLM Applications With Prompt Engineering — NVIDIA DLI</li>
+            <li><i class="fas fa-medal"></i> Deep Learning With PyTorch — Mahara Tech</li>
+            <li><i class="fas fa-medal"></i> AI and Machine Learning — Sprints</li>
+            <li><i class="fas fa-medal"></i> Introduction to Deep Learning — Mahara Tech</li>
+            <li><i class="fas fa-medal"></i> AI for All: From Basics to GenAI — NVIDIA Academy</li>
           </ul>
-        </div>
+        </section>
+
       </div>
     </div>
 
-    <!-- Projects section (highlight main 3) -->
+    <!-- PROJECTS -->
     <section class="projects-section">
-      <h2><i class="fas fa-rocket"></i> Featured Projects</h2>
+      <div class="section-header reveal">
+        <div class="icon-bubble pink"><i class="fas fa-rocket"></i></div>
+        <h2>Featured Projects</h2>
+        <p class="section-sub">Stuff I've built that actually works ⚡</p>
+      </div>
+
       <div class="projects-grid">
-        <!-- project 1 -->
-        <div class="project-card">
-          <div class="project-icon"><i class="fas fa-file-contract"></i></div>
+        <!-- Project 1 -->
+        <article class="project-card reveal">
+          <div class="project-glow"></div>
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-file-contract"></i></div>
+            <a href="https://github.com/z3yad30/Contract-Summary-Q-A-Assistant" target="_blank" class="project-link-btn" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
           <h3>Smart Contract Summary & Q&A Assistant</h3>
           <p class="project-tech">Python · LangChain · RAG · OpenRouter · Gradio · Chroma DB</p>
-          <ul>
+          <ul class="project-features">
             <li>End-to-end RAG system for legal document analysis (PDF/DOC), intelligent chunking + semantic search.</li>
             <li>Local vector store with sentence transformers & Chroma DB for accurate retrieval.</li>
             <li>Conversational Q&A interface with inline citations using LangChain LCEL & AuroraLLM.</li>
             <li>Production-grade Gradio web app with document upload, chat history & one-click summarization.</li>
           </ul>
-          <a href="https://github.com/z3yad30/Contract-Summary-Q-A-Assistant" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
-        </div>
-        <!-- project 2 -->
-        <div class="project-card">
-          <div class="project-icon"><i class="fas fa-film"></i></div>
+          <a href="https://github.com/z3yad30/Contract-Summary-Q-A-Assistant" target="_blank" class="btn btn-small">
+            <i class="fas fa-arrow-up-right-from-square"></i> View Project
+          </a>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal">
+          <div class="project-glow blue"></div>
+          <div class="project-top">
+            <div class="project-icon blue"><i class="fas fa-film"></i></div>
+            <a href="https://github.com/z3yad30/roberta-large-sentiment-imdb" target="_blank" class="project-link-btn" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
           <h3>IMDB Sentiment Analysis API</h3>
           <p class="project-tech">RoBERTa · FastAPI · Transformers · PyTorch · HTML/CSS/JS</p>
-          <ul>
+          <ul class="project-features">
             <li>Production-ready REST API using fine-tuned RoBERTa-large, 93–95% accuracy on IMDB test dataset (25k reviews).</li>
             <li>FastAPI backend with Pydantic validation, single & batch predictions (up to 100 reviews) + confidence scoring.</li>
             <li>Responsive frontend with real-time analysis, probability distribution visualization & mobile optimization.</li>
             <li>GPU/CPU-agnostic inference pipeline, error handling & health monitoring endpoints.</li>
           </ul>
-          <a href="https://github.com/z3yad30/roberta-large-sentiment-imdb" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
-        </div>
-        <!-- project 3 -->
-        <div class="project-card">
-          <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+          <a href="https://github.com/z3yad30/roberta-large-sentiment-imdb" target="_blank" class="btn btn-small">
+            <i class="fas fa-arrow-up-right-from-square"></i> View Project
+          </a>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal">
+          <div class="project-glow purple"></div>
+          <div class="project-top">
+            <div class="project-icon purple"><i class="fas fa-chart-line"></i></div>
+            <a href="https://github.com/z3yad30/bank-customer-segmentation-clustering" target="_blank" class="project-link-btn" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
           <h3>Bank Customer Segmentation & Clustering</h3>
           <p class="project-tech">K-Means · PCA · Streamlit · scikit-learn · Plotly</p>
-          <ul>
+          <ul class="project-features">
             <li>Unsupervised ML on 45,211 bank customers → identified 5 behavioral segments for targeted marketing.</li>
             <li>Compared K-Means, DBSCAN & Hierarchical Clustering with evaluation metrics (silhouette, Davies-Bouldin).</li>
             <li>PCA for dimensionality reduction + 2D visualizations of segments.</li>
             <li>Interactive Streamlit web app for real-time classification & segment profiling.</li>
           </ul>
-          <a href="https://github.com/z3yad30/bank-customer-segmentation-clustering" target="_blank" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
-        </div>
+          <a href="https://github.com/z3yad30/bank-customer-segmentation-clustering" target="_blank" class="btn btn-small">
+            <i class="fas fa-arrow-up-right-from-square"></i> View Project
+          </a>
+        </article>
       </div>
     </section>
 
-    <!-- footer -->
-    <footer>
-      <p>© 2026 Zeyad Mohamed Ahmed Refaey — Built with <i class="fas fa-heart"></i> for GitHub Pages</p>
-      <div class="footer-links">
-        <a href="https://github.com/z3yad30" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-        <a href="https://linkedin.com/in/zeyad-refaey" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="mailto:zeyad.mo.refaey@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+    <!-- FOOTER -->
+    <footer class="reveal">
+      <div class="footer-glow"></div>
+      <p class="footer-text">Built with <i class="fas fa-heart" style="color:#ff006e"></i> and too much caffeine</p>
+      <p class="footer-copy">© <span id="year"></span> Zeyad Mohamed Ahmed Refaey</p>
+      <div class="footer-socials">
+        <a href="https://github.com/z3yad30" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/zeyad-refaey" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:zeyad.mo.refaey@gmail.com" class="social-btn"><i class="fas fa-envelope"></i></a>
       </div>
     </footer>
+
   </div>
-  
+
   <script src="script.js"></script>
 </body>
 </html>
