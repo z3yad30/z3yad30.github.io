@@ -1,4 +1,4 @@
-// ===== GEN Z PORTFOLIO INTERACTIONS =====
+// ===== SOFT & PLAYFUL PORTFOLIO =====
 
 (function() {
   // --- THEME TOGGLE ---
@@ -6,32 +6,31 @@
   const body = document.body;
   const icon = themeBtn?.querySelector('i');
 
-  function applyTheme(isLight) {
-    if (isLight) {
-      body.classList.add('light-mode');
-      if (icon) { icon.classList.remove('fa-sun'); icon.classList.add('fa-moon'); }
-    } else {
-      body.classList.remove('light-mode');
+  function applyTheme(isDark) {
+    if (isDark) {
+      body.classList.add('dark-mode');
       if (icon) { icon.classList.remove('fa-moon'); icon.classList.add('fa-sun'); }
+    } else {
+      body.classList.remove('dark-mode');
+      if (icon) { icon.classList.remove('fa-sun'); icon.classList.add('fa-moon'); }
     }
   }
 
-  // Check saved or system preference
   const saved = localStorage.getItem('theme');
-  const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-  let isLight = saved ? saved === 'light' : prefersLight;
-  applyTheme(isLight);
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  let isDark = saved ? saved === 'dark' : prefersDark;
+  applyTheme(isDark);
 
   themeBtn?.addEventListener('click', () => {
-    isLight = !isLight;
-    applyTheme(isLight);
-    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    isDark = !isDark;
+    applyTheme(isDark);
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
   });
 
   // --- TYPEWRITER EFFECT ---
   const taglineEl = document.getElementById('typewriter');
   const phrases = [
-    'Data Science Student ⚡',
+    'Data Science Student 📊',
     'ML Engineer 🤖',
     'RAG & LLM Developer 🧠',
     'Turning data into magic ✨'
@@ -57,17 +56,16 @@
 
     if (!isDeleting && charIndex === current.length) {
       isDeleting = true;
-      typeSpeed = 1500; // pause at end
+      typeSpeed = 1800;
     } else if (isDeleting && charIndex === 0) {
       isDeleting = false;
       phraseIndex = (phraseIndex + 1) % phrases.length;
-      typeSpeed = 400; // pause before new phrase
+      typeSpeed = 500;
     }
 
     setTimeout(type, typeSpeed);
   }
 
-  // Start typewriter after a short delay
   setTimeout(type, 800);
 
   // --- SCROLL REVEAL ---
@@ -76,7 +74,7 @@
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('active');
-        observer.unobserve(entry.target); // only animate once
+        observer.unobserve(entry.target);
       }
     });
   }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
@@ -94,14 +92,4 @@
       link.setAttribute('rel', 'noopener noreferrer');
     }
   });
-
-  // --- SMOOTH PARALLAX ON HERO GLOW ---
-  const heroGlow = document.querySelector('.hero-glow');
-  if (heroGlow && !window.matchMedia('(pointer: coarse)').matches) {
-    document.addEventListener('mousemove', (e) => {
-      const x = (e.clientX / window.innerWidth - 0.5) * 30;
-      const y = (e.clientY / window.innerHeight - 0.5) * 30;
-      heroGlow.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
-    });
-  }
 })();
