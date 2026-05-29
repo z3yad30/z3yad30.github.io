@@ -1,95 +1,104 @@
-// ===== SOFT & PLAYFUL PORTFOLIO =====
-
+// zeyados_engine.js
 (function() {
-  // --- THEME TOGGLE ---
-  const themeBtn = document.getElementById('theme-toggle');
-  const body = document.body;
-  const icon = themeBtn?.querySelector('i');
+  "use strict";
 
-  function applyTheme(isDark) {
-    if (isDark) {
-      body.classList.add('dark-mode');
-      if (icon) { icon.classList.remove('fa-moon'); icon.classList.add('fa-sun'); }
-    } else {
-      body.classList.remove('dark-mode');
-      if (icon) { icon.classList.remove('fa-sun'); icon.classList.add('fa-moon'); }
-    }
+  // CLOCK LOGIC PROTOCOL
+  function runSystemClock() {
+    const clockEl = document.getElementById('system-clock');
+    if (!clockEl) return;
+    
+    setInterval(() => {
+      const now = new Date();
+      let hours = now.getHours();
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const seconds = String(now.getSeconds()).padStart(2, '0');
+      const ampm = hours >= 12 ? 'PM' : 'AM';
+      
+      hours = hours % 12;
+      hours = hours ? hours : 12; // true 12 base
+      const formattedHours = String(hours).padStart(2, '0');
+      
+      clockEl.textContent = `${formattedHours}:${minutes}:${seconds} ${ampm}`;
+    }, 1000);
   }
+  runSystemClock();
 
-  const saved = localStorage.getItem('theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  let isDark = saved ? saved === 'dark' : prefersDark;
-  applyTheme(isDark);
+  // OVERDRIVE THEME CORE (Toggles Matrix Green vs High Contrast Alert Amber)
+  const matrixToggle = document.getElementById('matrix-toggle');
+  let overdriveActive = false;
 
-  themeBtn?.addEventListener('click', () => {
-    isDark = !isDark;
-    applyTheme(isDark);
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  matrixToggle?.addEventListener('click', () => {
+    overdriveActive = !overdriveActive;
+    const root = document.documentElement;
+    
+    if (overdriveActive) {
+      root.style.setProperty('--neon-green', '#ffb000'); // shift system nodes to Amber
+      root.style.setProperty('--cyber-blue', '#ff00ff'); // shift accents to Magenta
+      matrixToggle.style.background = '#ffb000';
+      matrixToggle.style.color = '#000';
+    } else {
+      root.style.setProperty('--neon-green', '#39ff14'); // fallback to code green
+      root.style.setProperty('--cyber-blue', '#00ffff');
+      matrixToggle.style.background = '';
+      matrixToggle.style.color = '';
+    }
   });
 
-  // --- TYPEWRITER EFFECT ---
-  const taglineEl = document.getElementById('typewriter');
-  const phrases = [
-    'Data Science Student 📊',
-    'ML Engineer 🤖',
-    'RAG & LLM Developer 🧠',
-    'Turning data into magic ✨'
+  // HACKER TERMINAL OUTPUT SIMULATOR
+  const consoleEl = document.getElementById('typewriter-console');
+  const binaryLogs = [
+    ">> Initializing deep core neural classification vectors...",
+    ">> Synchronized with ChromaDB vector cache memory arrays.",
+    ">> Deploying automated production APIs through FastAPI loop.",
+    ">> Status: All micro-clusters operational. No errors found."
   ];
-  let phraseIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
-  let typeSpeed = 100;
-
-  function type() {
-    if (!taglineEl) return;
-    const current = phrases[phraseIndex];
-
+  
+  let logIdx = 0, charIdx = 0, isDeleting = false;
+  
+  function processConsoleOutput() {
+    if (!consoleEl) return;
+    const currentLog = binaryLogs[logIdx];
+    
     if (isDeleting) {
-      taglineEl.textContent = current.substring(0, charIndex - 1);
-      charIndex--;
-      typeSpeed = 40;
+      consoleEl.textContent = currentLog.substring(0, charIdx - 1);
+      charIdx--;
     } else {
-      taglineEl.textContent = current.substring(0, charIndex + 1);
-      charIndex++;
-      typeSpeed = 90;
+      consoleEl.textContent = currentLog.substring(0, charIdx + 1);
+      charIdx++;
     }
-
-    if (!isDeleting && charIndex === current.length) {
+    
+    if (!isDeleting && charIdx === currentLog.length) {
       isDeleting = true;
-      typeSpeed = 1800;
-    } else if (isDeleting && charIndex === 0) {
-      isDeleting = false;
-      phraseIndex = (phraseIndex + 1) % phrases.length;
-      typeSpeed = 500;
+      setTimeout(processConsoleOutput, 2500); // Hold statement
+      return;
     }
-
-    setTimeout(type, typeSpeed);
+    
+    if (isDeleting && charIdx === 0) {
+      isDeleting = false;
+      logIdx = (logIdx + 1) % binaryLogs.length;
+      setTimeout(processConsoleOutput, 300); // Break period
+      return;
+    }
+    
+    setTimeout(processConsoleOutput, isDeleting ? 20 : 50);
   }
+  setTimeout(processConsoleOutput, 600);
 
-  setTimeout(type, 800);
-
-  // --- SCROLL REVEAL ---
-  const revealEls = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-        observer.unobserve(entry.target);
+  // CLOSE MODULE SIMULATION HELPERS
+  document.querySelectorAll('.close-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const targetWindow = e.target.closest('.win95-card');
+      if (targetWindow) {
+        targetWindow.style.transition = 'transform 0.2s ease, opacity 0.2s';
+        targetWindow.style.transform = 'scale(0.9)';
+        targetWindow.style.opacity = '0';
+        setTimeout(() => targetWindow.remove(), 200);
       }
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-
-  revealEls.forEach(el => observer.observe(el));
-
-  // --- FOOTER YEAR ---
-  const yearEl = document.getElementById('year');
-  if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-  // --- EXTERNAL LINKS ---
-  document.querySelectorAll('a[href^="http"]').forEach(link => {
-    if (link.hostname !== window.location.hostname) {
-      link.setAttribute('target', '_blank');
-      link.setAttribute('rel', 'noopener noreferrer');
-    }
   });
+
+  // DYNAMIC COMPILATION TIMESTAMP 
+  const yearSpan = document.getElementById('year');
+  if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
 })();
