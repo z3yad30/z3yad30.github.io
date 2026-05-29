@@ -1,249 +1,268 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Zeyad Refaey — AI Engineer & Cyber-Hacker. Executing deep learning and RAG systems.">
-  <title>ZeyadRefaey.exe // Terminal_Home</title>
-  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zeyad.exe</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="crt-overlay"></div>
-<div class="scanlines"></div>
+  <div class="noise"></div>
+  <div class="scanlines"></div>
 
-<div class="desktop-bg">
-  <div class="pixel-matrix"></div>
-</div>
-
-<nav class="system-taskbar">
-  <div class="taskbar-brand">
-    <i class="fas fa-terminal"></i> <span>ZeyadOS_v2.0.0</span>
-  </div>
-  <div class="taskbar-center">
-    <span class="system-status">[ SYSTEM: ONLINE ]</span>
-  </div>
-  <div class="taskbar-right">
-    <span id="system-clock">00:00:00 AM</span>
-    <button id="matrix-toggle" class="sys-btn" aria-label="Toggle Overdrive"><i class="fas fa-radiation"></i></button>
-  </div>
-</nav>
-
-<div class="workspace">
-  
-  <header class="win95-card main-hero">
-    <div class="win95-title">
-      <div class="title-text"><i class="fas fa-id-card"></i> User_Identity_Matrix.exe</div>
-      <div class="win95-controls">
-        <button class="win-btn">_</button>
-        <button class="win-btn">❑</button>
-        <button class="win-btn close-btn">X</button>
-      </div>
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="logo">
+      <span class="dot"></span>
+      ZEYAD_OS v2.6
     </div>
-    <div class="win95-body hero-wrapper">
-      <div class="avatar-zone">
-        <div class="pixel-avatar-frame">
-          <img src="images/profile.png" alt="Zeyad Refaey" onerror="this.src='https://placehold.co/200x200/000000/00ff00?text=Z_REF_NOD'">
-          <div class="glitch-line"></div>
-        </div>
-        <div class="sys-badge">LVL. 2026 // ENG</div>
-      </div>
-      
-      <div class="hero-terminal">
-        <div class="prompt-line">C:\USERS\REFAEY> finger zeyad</div>
-        <h1 class="glitch-text" data-text="ZEYAD REFAEY">ZEYAD REFAEY</h1>
-        <div class="sub-prompt">>> POSITION: DATA SCIENTIST & AI ENGINEER</div>
-        
-        <div id="typewriter-console"></div>
-        
-        <div class="system-actions">
-          <a href="mailto:zeyad.mo.refaey@gmail.com" class="sys-action-btn pulse-border"><i class="fas fa-envelope"></i> INITIALIZE_CONTACT</a>
-          <a href="https://github.com/z3yad30" class="sys-action-btn"><i class="fab fa-github"></i> BROWSE_SOURCE</a>
-        </div>
-        
-        <div class="comms-channels">
-          <a href="tel:+201026887363" class="comms-node"><i class="fas fa-phone"></i> +201026887363</a>
-          <span class="comms-node"><i class="fas fa-network-wired"></i> CAIRO_NODE // EG</span>
-          <a href="https://linkedin.com/in/zeyadrefaey" class="comms-node"><i class="fab fa-linkedin"></i> LN_CHANNEL</a>
-        </div>
-      </div>
-    </div>
+
+    <nav>
+      <a href="#about">ABOUT</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
   </header>
 
-  <section class="win95-card">
-    <div class="win95-title">
-      <div class="title-text"><i class="fas fa-user-secret"></i> Core_Manifest.txt</div>
-      <div class="win95-controls"><button class="win-btn">_</button><button class="win-btn">X</button></div>
-    </div>
-    <div class="win95-body long-text">
-      <p class="terminal-p">
-        <span class="comment"># AI Engineering engineered with raw Gen-Z operational protocols.</span><br>
-        Deploying complete end-to-end Machine Learning pipelines, customized LLM architectures, and robust vector-DB retrieval nodes (RAG). Formatted with 100+ computational hours directly certified by NVIDIA DLI. Optimizing real-world telemetry through neural token classification, complex customer clustering matrix loops, and financial market modeling.
-      </p>
-      <div class="telemetry-readout">
-        <div class="telemetry-stat"><span class="stat-lbl">NVIDIA_DLI_RUNTIME:</span> <span class="stat-val">100+ HRS</span></div>
-        <div class="telemetry-stat"><span class="stat-lbl">PRODUCTION_DEPLOY_NODES:</span> <span class="stat-val">6+ CLUSTERS</span></div>
-        <div class="telemetry-stat"><span class="stat-lbl">ACTIVE_REPOSITORY_DROPS:</span> <span class="stat-val">3 FILTERS</span></div>
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="window main-window">
+
+      <div class="window-header">
+        <div class="window-buttons">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <p>profile.exe</p>
+      </div>
+
+      <div class="window-body">
+
+        <p class="boot-text">
+          > INITIALIZING ZEYAD SYSTEM...
+        </p>
+
+        <h1>
+          ZEYAD <br>
+          REFAEY
+        </h1>
+
+        <h2>
+          DATA SCIENCE <br>
+          + AI ENGINEER
+        </h2>
+
+        <p class="desc">
+          Building weird AI systems, RAG agents, ML products & futuristic experiences.
+          Probably training a model right now.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="https://github.com/z3yad30" target="_blank">
+            GITHUB.exe
+          </a>
+
+          <a href="mailto:zeyad.mo.refaey@gmail.com">
+            CONTACT.sys
+          </a>
+        </div>
+
       </div>
     </div>
+
   </section>
 
-  <div class="hardware-grid">
-    
-    <div class="hw-column">
-      <section class="win95-card">
-        <div class="win95-title">
-          <div class="title-text"><i class="fas fa-graduation-cap"></i> Academic_Registry.log</div>
-        </div>
-        <div class="win95-body code-block">
-          <div class="log-entry">
-            <span class="timestamp">[EDU_ENTRY]</span> <span class="keyword">INSTITUTION:</span> Egyptian Chinese University (ECU)<br>
-            <span class="timestamp">[EDU_ENTRY]</span> <span class="keyword">DEPARTMENT:</span> Faculty of CIT / BSc Data Science<br>
-            <span class="timestamp">[EDU_ENTRY]</span> <span class="keyword">CYCLE_END:</span> Expected Matrix 2027
-          </div>
-        </div>
-      </section>
+  <!-- ABOUT -->
+  <section id="about" class="section">
 
-      <section class="win95-card">
-        <div class="win95-title">
-          <div class="title-text"><i class="fas fa-briefcase"></i> Sector_Deployments.dat</div>
-        </div>
-        <div class="win95-body operations-box">
-          <div class="job-node">
-            <div class="job-meta">
-              <span class="job-title">DATA SCIENCE INTERN</span>
-              <span class="job-vendor">@ FAWRY_BANKING</span>
-              <span class="job-time">12.2025 - 01.2026</span>
-            </div>
-            <ul class="system-logs">
-              <li>:: Synthesized deep NLP sentiment extraction vectors (LSTM/GRU) exposed via FastAPI framework.</li>
-              <li>:: Commenced unsupervised K-Means structural matrix segmentation on 45,000+ customer records.</li>
-              <li>:: Evaluated neural regression nodes and structural prediction topologies for localized fintech tracking.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="win95-card">
-        <div class="win95-title">
-          <div class="title-text"><i class="fas fa-code-branch"></i> Pipeline_Training.sys</div>
-        </div>
-        <div class="win95-body static-list">
-          <div class="sys-item">
-            <div class="sys-item-header"><strong>GENERATIVE AI — ADVANCED_TRACK</strong> <span class="sys-tag">NVIDIA DLI</span></div>
-            <p>orchestrated autonomous RAG nodes, deep fine-tuning layers, Vector-DB matrix arrays.</p>
-          </div>
-          <div class="sys-item">
-            <div class="sys-item-header"><strong>DATA INFRASTRUCTURE INTERN</strong> <span class="sys-tag">NTI_NODE</span></div>
-            <p>Engineered automated pipeline queries, continuous SQL storage processing, and EDA protocols.</p>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div class="hw-column">
-      <section class="win95-card">
-        <div class="win95-title">
-          <div class="title-text"><i class="fas fa-cogs"></i> Memory_Allocation_Stack.cfg</div>
-        </div>
-        <div class="win95-body stack-container">
-          <div class="stack-row">
-            <div class="stack-label">LANGS:</div>
-            <div class="pixel-chips"><span class="p-chip">Python</span><span class="p-chip">SQL</span><span class="p-chip">R_Lang</span></div>
-          </div>
-          <div class="stack-row">
-            <div class="stack-label">AI/DL:</div>
-            <div class="pixel-chips"><span class="p-chip">TensorFlow</span><span class="p-chip">PyTorch</span><span class="p-chip">LangChain</span><span class="p-chip">HuggingFace</span></div>
-          </div>
-          <div class="stack-row">
-            <div class="stack-label">KBRNUTES:</div>
-            <div class="pixel-chips"><span class="p-chip">RoBERTa</span><span class="p-chip">ChromaDB</span><span class="p-chip">OpenRouter</span><span class="p-chip">Transformers</span></div>
-          </div>
-          <div class="stack-row">
-            <div class="stack-label">DEPLOY:</div>
-            <div class="pixel-chips"><span class="p-chip">FastAPI</span><span class="p-chip">Gradio</span><span class="p-chip">Streamlit</span><span class="p-chip">Git_Core</span></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="win95-card">
-        <div class="win95-title">
-          <div class="title-text"><i class="fas fa-certificate"></i> Verified_Security_Credentials.key</div>
-        </div>
-        <div class="win95-body crt-list">
-          <div class="crt-row"><i class="fas fa-key"></i> <span>NVIDIA DLI — Building Autonomous RAG Nodes</span></div>
-          <div class="crt-row"><i class="fas fa-key"></i> <span>NVIDIA — Prompt Engineering Topologies</span></div>
-          <div class="crt-row"><i class="fas fa-key"></i> <span>Mahara Tech — Deep Learning Optimization (PyTorch)</span></div>
-          <div class="crt-row"><i class="fas fa-key"></i> <span>Sprints Network — Advanced Machine Learning Protocols</span></div>
-        </div>
-      </section>
-    </div>
-
-  </div>
-
-  <section class="win95-card project-directory">
-    <div class="win95-title">
-      <div class="title-text"><i class="fas fa-folder-open"></i> D:\REPOSITORIES\COMPILED_RELEASES</div>
-    </div>
-    <div class="win95-body grid-directory">
-      
-      <div class="file-node">
-        <div class="file-icon-wrapper"><i class="fas fa-file-code"></i></div>
-        <div class="file-details">
-          <span class="file-name">CONTRACT_RAG_NODE.EXE</span>
-          <span class="file-meta">LangChain · Chroma DB · OpenRouter · Gradio</span>
-          <p class="file-desc">:: Executing isolated semantic intelligence parsing onto deep legal contract data arrays. Provides citations & synthetic content reduction matrices.</p>
-          <div class="file-actions">
-            <a href="https://github.com/z3yad30/Contract-Summary-Q-A-Assistant" class="sys-btn mini-btn"><i class="fab fa-github"></i> SRC</a>
-            <a href="#" class="sys-btn mini-btn src-run"><i class="fas fa-play"></i> EXECUTE</a>
-          </div>
-        </div>
+    <div class="window">
+      <div class="window-header">
+        <p>about.txt</p>
       </div>
 
-      <div class="file-node">
-        <div class="file-icon-wrapper"><i class="fas fa-terminal"></i></div>
-        <div class="file-details">
-          <span class="file-name">ROBERTA_SENTIMENT_CORE.API</span>
-          <span class="file-meta">FastAPI · Transformers · PyTorch Engine</span>
-          <p class="file-desc">:: Reached 93% classification validation matrix metrics on IMDB batch strings. Supports high throughput concurrent streaming channels.</p>
-          <div class="file-actions">
-            <a href="https://github.com/z3yad30/roberta-large-sentiment-imdb" class="sys-btn mini-btn"><i class="fab fa-github"></i> SRC</a>
-            <a href="#" class="sys-btn mini-btn src-run"><i class="fas fa-play"></i> RUN_API</a>
-          </div>
-        </div>
-      </div>
+      <div class="window-body">
 
-      <div class="file-node">
-        <div class="file-icon-wrapper"><i class="fas fa-network-wired"></i></div>
-        <div class="file-details">
-          <span class="file-name">BANK_SEGMENTATION_MATRIX.SYS</span>
-          <span class="file-meta">K-Means Core · PCA Reduction · Streamlit</span>
-          <p class="file-desc">:: Processing 45k distinct banking system entities compressed over 5 target dimensional clusters. Integrated vector spatial renders.</p>
-          <div class="file-actions">
-            <a href="https://github.com/z3yad30/bank-customer-segmentation-clustering" class="sys-btn mini-btn"><i class="fab fa-github"></i> SRC</a>
-            <a href="#" class="sys-btn mini-btn src-run"><i class="fas fa-play"></i> INTF_LOAD</a>
-          </div>
-        </div>
-      </div>
+        <div class="terminal">
+          <p>> whoami</p>
+          <span>
+            AI engineer / Data Scientist / builder / terminal addict
+          </span>
 
+          <p>> current_focus</p>
+          <span>
+            Generative AI, RAG, NLP, ML APIs, startup ideas, chaotic experiments
+          </span>
+
+          <p>> stack</p>
+          <span>
+            Python / TensorFlow / PyTorch / FastAPI / LangChain / SQL
+          </span>
+
+          <p>> status</p>
+          <span class="green">
+            ONLINE
+          </span>
+        </div>
+
+      </div>
     </div>
+
   </section>
 
-  <footer class="system-footer">
-    <div class="footer-divider"></div>
-    <p class="matrix-code">SYSTEM PORT_STATUS: SECURE // COMPILED SUCCESSFULLY BY REFAEY</p>
-    <p class="copyright-pixel">© <span id="year">2026</span> ZEYAD REFAEY. ALL PROTOCOLS RESERVED. V2_RETRO_NET</p>
-    <div class="footer-nodes">
-      <a href="https://github.com/z3yad30" class="net-node"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/zeyad-refaey" class="net-node"><i class="fab fa-linkedin-in"></i></a>
-      <a href="mailto:zeyad.mo.refaey@gmail.com" class="net-node"><i class="fas fa-envelope"></i></a>
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+
+    <h3 class="section-title">
+      FEATURED PROJECTS
+    </h3>
+
+    <div class="project-grid">
+
+      <div class="project-card">
+        <span class="project-tag">
+          RAG SYSTEM
+        </span>
+
+        <h4>
+          Smart Contract Q&A Assistant
+        </h4>
+
+        <p>
+          AI legal assistant with semantic search, vector DBs and conversational memory.
+        </p>
+
+        <a href="https://github.com/z3yad30/Contract-Summary-Q-A-Assistant" target="_blank">
+          OPEN PROJECT →
+        </a>
+      </div>
+
+      <div class="project-card">
+        <span class="project-tag">
+          NLP API
+        </span>
+
+        <h4>
+          IMDB Sentiment Analysis
+        </h4>
+
+        <p>
+          Fine-tuned RoBERTa sentiment engine with FastAPI backend and live frontend.
+        </p>
+
+        <a href="https://github.com/z3yad30/roberta-large-sentiment-imdb" target="_blank">
+          OPEN PROJECT →
+        </a>
+      </div>
+
+      <div class="project-card">
+        <span class="project-tag">
+          ML SYSTEM
+        </span>
+
+        <h4>
+          Bank Customer Segmentation
+        </h4>
+
+        <p>
+          K-Means + clustering analysis on 45K+ users with interactive visual analytics.
+        </p>
+
+        <a href="https://github.com/z3yad30/bank-customer-segmentation-clustering" target="_blank">
+          OPEN PROJECT →
+        </a>
+      </div>
+
     </div>
+
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section">
+
+    <div class="window">
+      <div class="window-header">
+        <p>skills.dll</p>
+      </div>
+
+      <div class="window-body">
+
+        <div class="skills-grid">
+
+          <div class="skill-box">
+            PYTHON
+          </div>
+
+          <div class="skill-box">
+            MACHINE LEARNING
+          </div>
+
+          <div class="skill-box">
+            RAG
+          </div>
+
+          <div class="skill-box">
+            NLP
+          </div>
+
+          <div class="skill-box">
+            FASTAPI
+          </div>
+
+          <div class="skill-box">
+            PYTORCH
+          </div>
+
+          <div class="skill-box">
+            SQL
+          </div>
+
+          <div class="skill-box">
+            LANGCHAIN
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <footer id="contact">
+
+    <p class="footer-line">
+      [ SYSTEM READY ]
+    </p>
+
+    <div class="footer-links">
+      <a href="https://github.com/z3yad30" target="_blank">
+        GitHub
+      </a>
+
+      <a href="https://linkedin.com/in/zeyadrefaey" target="_blank">
+        LinkedIn
+      </a>
+
+      <a href="mailto:zeyad.mo.refaey@gmail.com">
+        Email
+      </a>
+    </div>
+
+    <p class="copyright">
+      © 2026 ZEYAD REFAEY
+    </p>
+
   </footer>
 
-</div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

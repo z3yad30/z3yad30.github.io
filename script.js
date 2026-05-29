@@ -1,104 +1,99 @@
-// zeyados_engine.js
-(function() {
-  "use strict";
+// script.js
 
-  // CLOCK LOGIC PROTOCOL
-  function runSystemClock() {
-    const clockEl = document.getElementById('system-clock');
-    if (!clockEl) return;
-    
-    setInterval(() => {
-      const now = new Date();
-      let hours = now.getHours();
-      const minutes = String(now.getMinutes()).padStart(2, '0');
-      const seconds = String(now.getSeconds()).padStart(2, '0');
-      const ampm = hours >= 12 ? 'PM' : 'AM';
-      
-      hours = hours % 12;
-      hours = hours ? hours : 12; // true 12 base
-      const formattedHours = String(hours).padStart(2, '0');
-      
-      clockEl.textContent = `${formattedHours}:${minutes}:${seconds} ${ampm}`;
-    }, 1000);
-  }
-  runSystemClock();
+// TYPEWRITER EFFECT
 
-  // OVERDRIVE THEME CORE (Toggles Matrix Green vs High Contrast Alert Amber)
-  const matrixToggle = document.getElementById('matrix-toggle');
-  let overdriveActive = false;
+const bootText = document.querySelector(".boot-text");
 
-  matrixToggle?.addEventListener('click', () => {
-    overdriveActive = !overdriveActive;
-    const root = document.documentElement;
-    
-    if (overdriveActive) {
-      root.style.setProperty('--neon-green', '#ffb000'); // shift system nodes to Amber
-      root.style.setProperty('--cyber-blue', '#ff00ff'); // shift accents to Magenta
-      matrixToggle.style.background = '#ffb000';
-      matrixToggle.style.color = '#000';
-    } else {
-      root.style.setProperty('--neon-green', '#39ff14'); // fallback to code green
-      root.style.setProperty('--cyber-blue', '#00ffff');
-      matrixToggle.style.background = '';
-      matrixToggle.style.color = '';
+const texts = [
+  "> INITIALIZING ZEYAD SYSTEM...",
+  "> LOADING AI MODULES...",
+  "> CONNECTING TO THE MATRIX...",
+  "> DEPLOYING COOLNESS..."
+];
+
+let index = 0;
+
+setInterval(() => {
+  index = (index + 1) % texts.length;
+  bootText.textContent = texts[index];
+}, 2500);
+
+
+// RANDOM GLITCH EFFECT
+
+const hero = document.querySelector("h1");
+
+setInterval(() => {
+
+  hero.style.transform = `
+    translate(${Math.random() * 4 - 2}px,
+    ${Math.random() * 4 - 2}px)
+  `;
+
+  setTimeout(() => {
+    hero.style.transform = "translate(0)";
+  }, 120);
+
+}, 4000);
+
+
+// SMOOTH REVEAL
+
+const observer = new IntersectionObserver(entries => {
+
+  entries.forEach(entry => {
+
+    if(entry.isIntersecting){
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = "translateY(0)";
     }
+
   });
 
-  // HACKER TERMINAL OUTPUT SIMULATOR
-  const consoleEl = document.getElementById('typewriter-console');
-  const binaryLogs = [
-    ">> Initializing deep core neural classification vectors...",
-    ">> Synchronized with ChromaDB vector cache memory arrays.",
-    ">> Deploying automated production APIs through FastAPI loop.",
-    ">> Status: All micro-clusters operational. No errors found."
-  ];
-  
-  let logIdx = 0, charIdx = 0, isDeleting = false;
-  
-  function processConsoleOutput() {
-    if (!consoleEl) return;
-    const currentLog = binaryLogs[logIdx];
-    
-    if (isDeleting) {
-      consoleEl.textContent = currentLog.substring(0, charIdx - 1);
-      charIdx--;
-    } else {
-      consoleEl.textContent = currentLog.substring(0, charIdx + 1);
-      charIdx++;
-    }
-    
-    if (!isDeleting && charIdx === currentLog.length) {
-      isDeleting = true;
-      setTimeout(processConsoleOutput, 2500); // Hold statement
-      return;
-    }
-    
-    if (isDeleting && charIdx === 0) {
-      isDeleting = false;
-      logIdx = (logIdx + 1) % binaryLogs.length;
-      setTimeout(processConsoleOutput, 300); // Break period
-      return;
-    }
-    
-    setTimeout(processConsoleOutput, isDeleting ? 20 : 50);
-  }
-  setTimeout(processConsoleOutput, 600);
+});
 
-  // CLOSE MODULE SIMULATION HELPERS
-  document.querySelectorAll('.close-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      const targetWindow = e.target.closest('.win95-card');
-      if (targetWindow) {
-        targetWindow.style.transition = 'transform 0.2s ease, opacity 0.2s';
-        targetWindow.style.transform = 'scale(0.9)';
-        targetWindow.style.opacity = '0';
-        setTimeout(() => targetWindow.remove(), 200);
-      }
-    });
-  });
+document.querySelectorAll(".project-card, .window").forEach(el => {
 
-  // DYNAMIC COMPILATION TIMESTAMP 
-  const yearSpan = document.getElementById('year');
-  if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+  el.style.opacity = 0;
+  el.style.transform = "translateY(40px)";
+  el.style.transition = "all .7s ease";
 
-})();
+  observer.observe(el);
+
+});
+
+
+// CURSOR TRAIL
+
+const trail = document.createElement("div");
+trail.classList.add("cursor-trail");
+
+document.body.appendChild(trail);
+
+document.addEventListener("mousemove", e => {
+
+  trail.style.left = e.clientX + "px";
+  trail.style.top = e.clientY + "px";
+
+});
+
+
+// EXTRA STYLE FROM JS
+
+const style = document.createElement("style");
+
+style.innerHTML = `
+.cursor-trail{
+  position:fixed;
+  width:14px;
+  height:14px;
+  border:2px solid #00ff88;
+  border-radius:50%;
+  pointer-events:none;
+  transform:translate(-50%,-50%);
+  z-index:9999;
+  box-shadow:0 0 14px #00ff88;
+}
+`;
+
+document.head.appendChild(style);
