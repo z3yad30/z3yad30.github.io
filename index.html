@@ -2,278 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Zeyad Refaey — Data Science & AI Engineer. Building ML, NLP, and LLM applications.">
-  <title>Zeyad Refaey | Data Science & AI</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Zeyad Refaey — Data Science & ML Engineer. Building AI, LLMs, and cool stuff with a fresh new vibe.">
+  <title>Zeyad Refaey | AI Engineer & Creator — new wave</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="bg-mesh">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+<div class="grid-overlay"></div>
+<div class="scanline"></div>
 
-  <!-- Floating shapes background -->
-  <div class="bg-shapes">
-    <div class="shape s1"></div>
-    <div class="shape s2"></div>
-    <div class="shape s3"></div>
-    <div class="shape s4"></div>
-    <div class="shape s5"></div>
+<nav class="topbar">
+  <div class="logo">ZR.</div>
+  <div class="nav-right">
+    <span class="status"><span class="status-dot"></span> open for collabs</span>
+    <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
   </div>
+</nav>
 
-  <div class="page">
-
-    <!-- Top bar -->
-    <nav class="topbar">
-      <a href="#" class="logo">zr.</a>
-      <div class="topbar-right">
-        <span class="available">Available for work</span>
-        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
-          <i class="fas fa-moon"></i>
-        </button>
+<div class="container">
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-image">
+        <img src="images/profile.png" alt="Zeyad Mohamed Refaey" onerror="this.src='https://placehold.co/200x200?text=ZR'">
+        <div class="image-ring"></div>
       </div>
-    </nav>
-
-    <!-- Hero -->
-    <header class="hero">
-      <div class="hero-photo">
-        <img src="images/profile.png" alt="Zeyad Mohamed Refaey">
-      </div>
-      <div class="hero-text">
-        <p class="greeting">Hey, I'm Zeyad 👋</p>
-        <h1>Data Science Student<br>building <span class="highlight">AI & ML</span> stuff</h1>
-        <p class="hero-desc">I turn messy data into smart systems. NLP, LLMs, RAG agents, and models that actually ship.</p>
-        <div class="hero-buttons">
-          <a href="mailto:zeyad.mo.refaey@gmail.com" class="btn btn-main">Let's talk <i class="fas fa-arrow-right"></i></a>
-          <a href="https://github.com/z3yad30" target="_blank" class="btn btn-soft"><i class="fab fa-github"></i> GitHub</a>
+      <div class="hero-content">
+        <div class="hero-eyebrow">✦ FULL-STACK AI ROCKSTAR</div>
+        <h1 class="gradient-text">Zeyad <br><span>Refaey</span></h1>
+        <div id="typewriter"></div>
+        <div class="hero-actions">
+          <a href="mailto:zeyad.mo.refaey@gmail.com" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Hire Me</a>
+          <a href="https://github.com/z3yad30" target="_blank" class="btn btn-ghost"><i class="fab fa-github"></i> GitHub</a>
         </div>
-        <div class="hero-links">
-          <a href="tel:+201026887363" class="link-chip"><i class="fas fa-phone"></i> +20 102 688 7363</a>
-          <a href="#" class="link-chip"><i class="fas fa-location-dot"></i> Cairo, Egypt</a>
-          <a href="https://linkedin.com/in/zeyadrefaey" target="_blank" class="link-chip"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <div class="contact-pills">
+          <a href="tel:+201026887363" class="pill"><i class="fas fa-phone"></i> +20 102 688 7363</a>
+          <a href="#" class="pill"><i class="fas fa-location-dot"></i> Cairo, EG</a>
+          <a href="https://linkedin.com/in/zeyadrefaey" target="_blank" class="pill"><i class="fab fa-linkedin"></i> LinkedIn</a>
         </div>
-      </div>
-    </header>
-
-    <!-- About -->
-    <section class="section about reveal">
-      <div class="section-tag"><i class="fas fa-user"></i> About</div>
-      <div class="card card-pink">
-        <p class="about-text">
-          Results-driven Data Science student with hands-on experience in machine learning, deep learning, and NLP. 
-          Proven track record of developing and deploying end-to-end ML solutions including sentiment analysis systems, 
-          RAG-powered AI assistants, and customer segmentation models. Skilled in Python, TensorFlow, PyTorch, and FastAPI 
-          with expertise in building production-ready applications. Completed 100+ hour advanced training in Generative AI, 
-          Deep Learning, and Building RAG Agents with LLMs through NVIDIA DLI programs. Strong foundation in data analysis, 
-          statistical modeling, and interactive dashboard creation.
-        </p>
-        <div class="mini-stats">
-          <div class="mstat">
-            <span class="mnum">100+</span>
-            <span class="mlabel">Hours NVIDIA DLI</span>
-          </div>
-          <div class="mstat">
-            <span class="mnum">3</span>
-            <span class="mlabel">Featured Projects</span>
-          </div>
-          <div class="mstat">
-            <span class="mnum">5+</span>
-            <span class="mlabel">ML Models Deployed</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Two columns -->
-    <div class="two-col">
-
-      <!-- Left -->
-      <div class="col-left">
-
-        <section class="section reveal">
-          <div class="section-tag"><i class="fas fa-graduation-cap"></i> Education</div>
-          <div class="card card-purple">
-            <h3 class="card-title">Bachelor of Science in Data Science</h3>
-            <p class="card-sub">Egyptian Chinese University (ECU)</p>
-            <p class="card-meta">Faculty of Computers & IT · Expected Graduation: 2027</p>
-          </div>
-        </section>
-
-        <section class="section reveal">
-          <div class="section-tag"><i class="fas fa-briefcase"></i> Work Experience</div>
-          <div class="card card-blue">
-            <div class="exp-badge">@ Fawry</div>
-            <h3 class="card-title">Data Science Intern</h3>
-            <p class="card-meta">Dec 2025 – Jan 2026 · Cairo, Egypt</p>
-            <ul class="bullet-list">
-              <li>Developed NLP-powered sentiment analysis system using LSTM and GRU architectures in TensorFlow/Keras, deployed via REST API using Flask and FastAPI for real-time predictions.</li>
-              <li>Performed financial customer segmentation by applying K-Means clustering & elbow method to identify 5 distinct behavioral patterns from transactional data.</li>
-              <li>Built and optimized a feedforward neural network for handwritten digit classification on MNIST dataset.</li>
-              <li>Engineered predictive models for retail customer spending using Linear Regression with extensive feature engineering.</li>
-              <li>Conducted comprehensive data cleaning and visualization using Pandas, NumPy, and Seaborn.</li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="section reveal">
-          <div class="section-tag"><i class="fas fa-code-branch"></i> Training</div>
-          <div class="card card-yellow">
-            <div class="training-item">
-              <div class="training-top">
-                <h4 class="training-title">Generative AI Intern — Advanced</h4>
-                <span class="training-org">ITI · NVIDIA DLI</span>
-              </div>
-              <p class="training-meta">Feb 2026 · 100 Hours</p>
-              <p class="training-desc">Deep Learning Basics, Building RAG Agents With LLMs, and Capstone Project.</p>
-            </div>
-            <div class="training-item">
-              <div class="training-top">
-                <h4 class="training-title">Data Analysis Intern</h4>
-                <span class="training-org">NTI</span>
-              </div>
-              <p class="training-meta">Jun – Sep 2025 · 90 Hours</p>
-              <p class="training-desc">Data cleaning, EDA, dashboards using Python, SQL, Power BI, SSIS.</p>
-            </div>
-            <div class="training-item">
-              <div class="training-top">
-                <h4 class="training-title">Generative AI Intern — Beginner</h4>
-                <span class="training-org">ITI · NVIDIA DLI</span>
-              </div>
-              <p class="training-meta">Sep 2025 · 35 Hours</p>
-              <p class="training-desc">Generative AI, LLM development, Prompt Engineering, and RAG.</p>
-            </div>
-          </div>
-        </section>
-
-      </div>
-
-      <!-- Right -->
-      <div class="col-right">
-
-        <section class="section reveal">
-          <div class="section-tag"><i class="fas fa-cogs"></i> Tech Stack</div>
-          <div class="card card-green">
-            <div class="skill-group">
-              <h4 class="skill-label">Languages</h4>
-              <div class="skill-row">
-                <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">R</span>
-              </div>
-            </div>
-            <div class="skill-group">
-              <h4 class="skill-label">ML / DL</h4>
-              <div class="skill-row">
-                <span class="tag">TensorFlow</span><span class="tag">Keras</span><span class="tag">PyTorch</span><span class="tag">scikit-learn</span><span class="tag">Hugging Face</span>
-              </div>
-            </div>
-            <div class="skill-group">
-              <h4 class="skill-label">Data & Viz</h4>
-              <div class="skill-row">
-                <span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">Power BI</span>
-              </div>
-            </div>
-            <div class="skill-group">
-              <h4 class="skill-label">NLP & LLMs</h4>
-              <div class="skill-row">
-                <span class="tag">LangChain</span><span class="tag">Sentence Transformers</span><span class="tag">Prompt Engineering</span><span class="tag">RAG</span><span class="tag">RoBERTa</span><span class="tag">LSTM/GRU</span>
-              </div>
-            </div>
-            <div class="skill-group">
-              <h4 class="skill-label">Web & Deploy</h4>
-              <div class="skill-row">
-                <span class="tag">FastAPI</span><span class="tag">Flask</span><span class="tag">Streamlit</span><span class="tag">Gradio</span><span class="tag">Git</span>
-              </div>
-            </div>
-            <div class="skill-group">
-              <h4 class="skill-label">Tools</h4>
-              <div class="skill-row">
-                <span class="tag">Chroma DB</span><span class="tag">Vector Stores</span><span class="tag">SSIS</span><span class="tag">OpenRouter API</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section reveal">
-          <div class="section-tag"><i class="fas fa-certificate"></i> Certifications</div>
-          <div class="card card-lavender">
-            <ul class="cert-list">
-              <li><i class="fas fa-star"></i> Building RAG Agents with LLMs — NVIDIA DLI</li>
-              <li><i class="fas fa-star"></i> Building LLM Applications With Prompt Engineering — NVIDIA DLI</li>
-              <li><i class="fas fa-star"></i> Deep Learning With PyTorch — Mahara Tech</li>
-              <li><i class="fas fa-star"></i> AI and Machine Learning — Sprints</li>
-              <li><i class="fas fa-star"></i> Introduction to Deep Learning — Mahara Tech</li>
-              <li><i class="fas fa-star"></i> AI for All: From Basics to GenAI — NVIDIA Academy</li>
-            </ul>
-          </div>
-        </section>
-
       </div>
     </div>
+  </header>
 
-    <!-- Projects -->
-    <section class="section projects reveal">
-      <div class="section-tag"><i class="fas fa-rocket"></i> Featured Projects</div>
-      <div class="projects-grid">
+  <section class="glass-card reveal">
+    <div class="card-header"><div class="icon-bubble"><i class="fas fa-user-astronaut"></i></div><h2>About Me — New Wave</h2></div>
+    <p class="summary-text">⚡ Gen Z Data Scientist vibes: I build AI that actually slaps. End-to-end ML, LLM RAG systems, and deep learning deployed at scale. 100+ NVIDIA DLI hours, fine-tuned models for sentiment analysis, RAG agents, and customer clustering. Turning raw data into killer insights & production magic.</p>
+    <div class="stats-row" style="display:flex; gap:2rem; margin-top:1rem;">
+      <div><span style="font-size:1.8rem; font-weight:900; color:#00f0ff;">100+</span><br>NVIDIA Hours</div>
+      <div><span style="font-size:1.8rem; font-weight:900; color:#ff2d75;">6+</span><br>ML Deployments</div>
+      <div><span style="font-size:1.8rem; font-weight:900; color:#c4ff0a;">3</span><br>Featured Projects</div>
+    </div>
+  </section>
 
-        <article class="project-card">
-          <div class="project-emoji">📄</div>
-          <h3>Smart Contract Summary & Q&A Assistant</h3>
-          <p class="project-tags">Python · LangChain · RAG · OpenRouter · Gradio · Chroma DB</p>
-          <ul class="project-points">
-            <li>End-to-end RAG system for legal document analysis (PDF/DOC), intelligent chunking + semantic search.</li>
-            <li>Local vector store with sentence transformers & Chroma DB for accurate retrieval.</li>
-            <li>Conversational Q&A interface with inline citations using LangChain LCEL & AuroraLLM.</li>
-            <li>Production-grade Gradio web app with document upload, chat history & one-click summarization.</li>
-          </ul>
-          <a href="https://github.com/z3yad30/Contract-Summary-Q-A-Assistant" target="_blank" class="project-link">
-            <i class="fab fa-github"></i> View on GitHub
-          </a>
-        </article>
-
-        <article class="project-card">
-          <div class="project-emoji blue">🎬</div>
-          <h3>IMDB Sentiment Analysis API</h3>
-          <p class="project-tags">RoBERTa · FastAPI · Transformers · PyTorch · HTML/CSS/JS</p>
-          <ul class="project-points">
-            <li>Production-ready REST API using fine-tuned RoBERTa-large, 93–95% accuracy on IMDB test dataset (25k reviews).</li>
-            <li>FastAPI backend with Pydantic validation, single & batch predictions (up to 100 reviews) + confidence scoring.</li>
-            <li>Responsive frontend with real-time analysis, probability distribution visualization & mobile optimization.</li>
-            <li>GPU/CPU-agnostic inference pipeline, error handling & health monitoring endpoints.</li>
-          </ul>
-          <a href="https://github.com/z3yad30/roberta-large-sentiment-imdb" target="_blank" class="project-link">
-            <i class="fab fa-github"></i> View on GitHub
-          </a>
-        </article>
-
-        <article class="project-card">
-          <div class="project-emoji purple">📊</div>
-          <h3>Bank Customer Segmentation & Clustering</h3>
-          <p class="project-tags">K-Means · PCA · Streamlit · scikit-learn · Plotly</p>
-          <ul class="project-points">
-            <li>Unsupervised ML on 45,211 bank customers → identified 5 behavioral segments for targeted marketing.</li>
-            <li>Compared K-Means, DBSCAN & Hierarchical Clustering with evaluation metrics (silhouette, Davies-Bouldin).</li>
-            <li>PCA for dimensionality reduction + 2D visualizations of segments.</li>
-            <li>Interactive Streamlit web app for real-time classification & segment profiling.</li>
-          </ul>
-          <a href="https://github.com/z3yad30/bank-customer-segmentation-clustering" target="_blank" class="project-link">
-            <i class="fab fa-github"></i> View on GitHub
-          </a>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="reveal">
-      <p class="footer-line">Made with care by Zeyad</p>
-      <p class="footer-copy">© <span id="year"></span> Zeyad Mohamed Ahmed Refaey</p>
-      <div class="footer-socials">
-        <a href="https://github.com/z3yad30" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/zeyad-refaey" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="mailto:zeyad.mo.refaey@gmail.com"><i class="fas fa-envelope"></i></a>
-      </div>
-    </footer>
-
+  <div class="two-col-grid">
+    <div class="left-col">
+      <section class="glass-card reveal"><div class="card-header"><div class="icon-bubble pink"><i class="fas fa-graduation-cap"></i></div><h2>Education</h2></div>
+        <div class="edu-item"><h3>BSc in Data Science</h3><p class="institution">Egyptian Chinese University (ECU)</p><p class="date">Faculty of CIT · Expected 2027</p></div>
+      </section>
+      <section class="glass-card reveal"><div class="card-header"><div class="icon-bubble cyan"><i class="fas fa-briefcase"></i></div><h2>Work Experience</h2></div>
+        <div class="exp-item"><div class="exp-header"><div class="exp-title"><h3>Data Science Intern</h3><span class="badge">@ Fawry</span></div><span class="exp-date">Dec 2025 – Jan 2026</span></div>
+          <ul class="exp-list"><li><span class="bullet"></span>NLP sentiment system with LSTM/GRU + FastAPI</li><li><span class="bullet"></span>K-Means clustering on 45k+ bank customers</li><li><span class="bullet"></span>Neural nets and regression models for finance</li></ul>
+        </div>
+      </section>
+      <section class="glass-card reveal"><div class="card-header"><div class="icon-bubble purple"><i class="fas fa-code-branch"></i></div><h2>Training & Badges</h2></div>
+        <div class="training-list"><div class="training-item"><div class="training-head"><h3>Generative AI — Advanced</h3><span class="training-tag">NVIDIA DLI</span></div><p class="training-desc">RAG agents, LLMs, vector DB, 100h intensive</p></div>
+        <div class="training-item"><div class="training-head"><h3>Data Analysis Intern</h3><span class="training-tag">NTI</span></div><p class="training-desc">Power BI, SQL, Python EDA</p></div></div>
+      </section>
+    </div>
+    <div class="right-col">
+      <section class="glass-card reveal"><div class="card-header"><div class="icon-bubble yellow"><i class="fas fa-cogs"></i></div><h2>Tech Stack</h2></div>
+        <div class="skills-grid"><div class="skill-block"><h4>Languages</h4><div class="skill-pills"><span class="spill">Python</span><span class="spill">SQL</span><span class="spill">R</span></div></div>
+        <div class="skill-block"><h4>ML/DL</h4><div class="skill-pills"><span class="spill">TensorFlow</span><span class="spill">PyTorch</span><span class="spill">LangChain</span><span class="spill">HuggingFace</span></div></div>
+        <div class="skill-block"><h4>LLM & RAG</h4><div class="skill-pills"><span class="spill">RoBERTa</span><span class="spill">Chroma DB</span><span class="spill">OpenRouter</span><span class="spill">Sentence-Transformers</span></div></div>
+        <div class="skill-block"><h4>Web/Deploy</h4><div class="skill-pills"><span class="spill">FastAPI</span><span class="spill">Gradio</span><span class="spill">Streamlit</span><span class="spill">Git</span></div></div></div>
+      </section>
+      <section class="glass-card reveal"><div class="card-header"><div class="icon-bubble green"><i class="fas fa-certificate"></i></div><h2>Certifications</h2></div>
+        <ul class="cert-grid"><li><i class="fas fa-medal"></i> Building RAG Agents with LLMs — NVIDIA DLI</li><li><i class="fas fa-medal"></i> Prompt Engineering & LLM Apps — NVIDIA</li><li><i class="fas fa-medal"></i> Deep Learning with PyTorch — Mahara Tech</li><li><i class="fas fa-medal"></i> AI & Machine Learning — Sprints</li></ul>
+      </section>
+    </div>
   </div>
 
-  <script src="script.js"></script>
+  <section class="projects-section">
+    <div class="section-header reveal"><div class="icon-bubble pink" style="margin:0 auto 0.5rem;"><i class="fas fa-rocket"></i></div><h2>Featured Drops</h2><p class="section-sub">production-ready AI that pops</p></div>
+    <div class="projects-grid">
+      <article class="project-card reveal"><div class="project-top"><div class="project-icon"><i class="fas fa-file-contract"></i></div><a href="https://github.com/z3yad30/Contract-Summary-Q-A-Assistant" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a></div>
+        <h3>Smart Contract Q&A RAG</h3><p class="project-tech">LangChain · Chroma DB · OpenRouter · Gradio</p><ul class="project-features"><li>Legal doc RAG with semantic search</li><li>Citation & summarization with LLM</li><li>Production-ready interface</li></ul><a href="#" class="btn-small"><i class="fas fa-arrow-up-right-from-square"></i> Explore</a>
+      </article>
+      <article class="project-card reveal"><div class="project-top"><div class="project-icon blue"><i class="fas fa-film"></i></div><a href="https://github.com/z3yad30/roberta-large-sentiment-imdb" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a></div>
+        <h3>RoBERTa Sentiment API</h3><p class="project-tech">FastAPI · Transformers · PyTorch</p><ul class="project-features"><li>93% accuracy on IMDB</li><li>Batch predictions + confidence</li><li>Real-time dashboard</li></ul><a href="#" class="btn-small"><i class="fas fa-arrow-up-right-from-square"></i> Check API</a>
+      </article>
+      <article class="project-card reveal"><div class="project-top"><div class="project-icon purple"><i class="fas fa-chart-line"></i></div><a href="https://github.com/z3yad30/bank-customer-segmentation-clustering" target="_blank" class="project-link-btn"><i class="fab fa-github"></i></a></div>
+        <h3>Bank Customer Segmentation</h3><p class="project-tech">K-Means · PCA · Streamlit · Plotly</p><ul class="project-features"><li>45k customers → 5 segments</li><li>Interactive web app</li><li>Marketing insights</li></ul><a href="#" class="btn-small"><i class="fas fa-arrow-up-right-from-square"></i> Live Demo</a>
+      </article>
+    </div>
+  </section>
+
+  <footer class="reveal"><div class="footer-glow"></div><p class="footer-text">Built with <i class="fas fa-heart" style="color:#ff2d75"></i> & cyberpunk energy</p><p class="footer-copy">© <span id="year"></span> Zeyad Mohamed Ahmed Refaey — #GenZ AI</p><div class="footer-socials"><a href="https://github.com/z3yad30" class="social-btn"><i class="fab fa-github"></i></a><a href="https://linkedin.com/in/zeyad-refaey" class="social-btn"><i class="fab fa-linkedin-in"></i></a><a href="mailto:zeyad.mo.refaey@gmail.com" class="social-btn"><i class="fas fa-envelope"></i></a></div></footer>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
