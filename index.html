@@ -2,318 +2,254 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="Zeyad Refaey — Data Science & AI Engineer.">
-  <title>ZEYAD REFAEY</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <title>Zeyad Refaey</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- NOISE OVERLAY -->
-  <div class="noise"></div>
-
-  <!-- TICKER -->
-  <div class="ticker-wrap">
-    <div class="ticker">
-      <span>ZEYAD REFAEY</span>
-      <span>★</span>
-      <span>DATA SCIENCE &amp; AI ENGINEER</span>
-      <span>★</span>
-      <span>CAIRO, EGYPT</span>
-      <span>★</span>
-      <span>100+ HRS NVIDIA DLI</span>
-      <span>★</span>
-      <span>RAG · NLP · LLMs · ML</span>
-      <span>★</span>
-      <span>OPEN TO WORK</span>
-      <span>★</span>
-      <span>ZEYAD REFAEY</span>
-      <span>★</span>
-      <span>DATA SCIENCE &amp; AI ENGINEER</span>
-      <span>★</span>
-      <span>CAIRO, EGYPT</span>
-      <span>★</span>
-      <span>100+ HRS NVIDIA DLI</span>
-      <span>★</span>
-      <span>RAG · NLP · LLMs · ML</span>
-      <span>★</span>
-      <span>OPEN TO WORK</span>
-      <span>★</span>
-    </div>
-  </div>
-
-  <!-- NAV -->
-  <nav class="nav">
-    <div class="nav-logo">ZR<span class="blink">_</span></div>
-    <div class="nav-links">
-      <a href="#about">ABOUT</a>
-      <a href="#projects">PROJECTS</a>
-      <a href="#skills">SKILLS</a>
-      <a href="mailto:zeyad.mo.refaey@gmail.com">CONTACT</a>
-    </div>
-    <div class="nav-socials">
-      <a href="https://github.com/z3yad30" target="_blank" rel="noopener noreferrer">GH</a>
-      <a href="https://linkedin.com/in/zeyadrefaey" target="_blank" rel="noopener noreferrer">LI</a>
+  <nav class="topbar">
+    <a href="#" class="logo">Zeyad Refaey</a>
+    <div class="nav-right">
+      <a href="https://github.com/z3yad30" target="_blank" class="nav-link">GitHub</a>
+      <a href="https://linkedin.com/in/zeyadrefaey" target="_blank" class="nav-link">LinkedIn</a>
+      <a href="mailto:zeyad.mo.refaey@gmail.com" class="nav-link">Contact</a>
+      <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+      </button>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <header class="hero" id="hero">
-    <div class="hero-label">[ PORTFOLIO — 2025 ]</div>
+  <div class="container">
 
-    <div class="hero-main">
-      <div class="hero-image-wrap">
-        <img src="images/profile.png" alt="Zeyad Refaey" class="hero-img">
-        <div class="hero-img-caption">ZEYAD<br>REFAEY</div>
-      </div>
-      <div class="hero-text">
-        <h1 class="hero-title">
-          <span class="line">DATA</span>
-          <span class="line">SCIENCE</span>
-          <span class="line indent">&amp; AI.</span>
-        </h1>
-      </div>
-    </div>
-
-    <div class="hero-sub-row">
-      <p class="hero-desc">Building production-ready ML systems, RAG agents, and NLP pipelines. Cairo-based. Always shipping.</p>
-      <div class="hero-cta">
-        <a href="mailto:zeyad.mo.refaey@gmail.com" class="btn-brutal">HIRE ME →</a>
-        <a href="https://github.com/z3yad30" target="_blank" rel="noopener noreferrer" class="btn-brutal btn-ghost">GITHUB →</a>
-      </div>
-    </div>
-
-    <div class="hero-stats">
-      <div class="stat-box">
-        <span class="stat-n">100+</span>
-        <span class="stat-l">HRS NVIDIA DLI</span>
-      </div>
-      <div class="stat-box">
-        <span class="stat-n">3</span>
-        <span class="stat-l">FEATURED PROJECTS</span>
-      </div>
-      <div class="stat-box">
-        <span class="stat-n">5+</span>
-        <span class="stat-l">ML MODELS DEPLOYED</span>
-      </div>
-      <div class="stat-box stat-box--accent">
-        <span class="stat-n">∞</span>
-        <span class="stat-l">CURIOSITY</span>
-      </div>
-    </div>
-  </header>
-
-  <!-- DIVIDER -->
-  <div class="section-divider"><span>§ 01 — ABOUT</span></div>
-
-  <!-- ABOUT -->
-  <section class="about-section reveal" id="about">
-    <div class="about-grid">
-      <div class="about-left">
-        <div class="tag-row">
-          <span class="tag">CAIRO</span>
-          <span class="tag">ECU — CS 2027</span>
-          <span class="tag">OPEN TO WORK</span>
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="hero-image">
+          <img src="images/profile.png" alt="Zeyad Mohamed Refaey">
         </div>
-        <p class="about-body">
-          Results-driven Data Science student with hands-on experience in machine learning, deep learning, and NLP. Proven track record developing and deploying end-to-end ML solutions — sentiment analysis systems, RAG-powered AI assistants, and customer segmentation models.
-        </p>
-        <p class="about-body">
-          Skilled in Python, TensorFlow, PyTorch, and FastAPI. Completed 100+ hours advanced training in Generative AI, Deep Learning, and Building RAG Agents through NVIDIA DLI programs.
-        </p>
-      </div>
-      <div class="about-right">
-        <div class="xp-block">
-          <div class="xp-header">
-            <span class="xp-role">DATA SCIENCE INTERN</span>
-            <span class="xp-date">DEC 2025 – JAN 2026</span>
+        <div class="hero-content">
+          <h1>Zeyad Refaey</h1>
+          <p class="hero-subtitle">Data Science & AI Engineer</p>
+          <p class="hero-desc">
+            Building production-ready ML systems, RAG agents, and NLP pipelines. 
+            100+ hours of NVIDIA DLI training. Based in Cairo.
+          </p>
+          <div class="hero-actions">
+            <a href="mailto:zeyad.mo.refaey@gmail.com" class="btn btn-primary">Get in touch</a>
+            <a href="https://github.com/z3yad30" target="_blank" class="btn btn-ghost">View GitHub</a>
           </div>
-          <div class="xp-company">FAWRY</div>
-          <ul class="xp-list">
-            <li>NLP sentiment analysis — LSTM &amp; GRU via FastAPI</li>
-            <li>Financial customer segmentation — K-Means (5 clusters)</li>
-            <li>MNIST digit classifier — feedforward neural net</li>
-            <li>Retail spending prediction — Linear Regression + feature engineering</li>
+        </div>
+      </div>
+    </header>
+
+    <hr class="divider">
+
+    <!-- ABOUT -->
+    <section class="about reveal">
+      <h2 class="section-label">About</h2>
+      <p class="about-text">
+        Results-driven Data Science student with hands-on experience in machine learning, deep learning, and NLP. 
+        Proven track record of developing and deploying end-to-end ML solutions including sentiment analysis systems, 
+        RAG-powered AI assistants, and customer segmentation models. Skilled in Python, TensorFlow, PyTorch, and FastAPI 
+        with expertise in building production-ready applications. Completed 100+ hour advanced training in Generative AI, 
+        Deep Learning, and Building RAG Agents with LLMs through NVIDIA DLI programs.
+      </p>
+      <div class="stats-row">
+        <div class="stat">
+          <span class="stat-num">100+</span>
+          <span class="stat-label">Hours NVIDIA DLI</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Featured Projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">ML Models Deployed</span>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- TWO COLUMN: LEFT -->
+    <div class="two-col-grid">
+      <div class="left-col">
+
+        <section class="reveal">
+          <h2 class="section-label">Education</h2>
+          <div class="edu-item">
+            <h3>Bachelor of Science in Data Science</h3>
+            <p class="institution">Egyptian Chinese University (ECU)</p>
+            <p class="date">Faculty of Computers & Information Technology — Expected 2027</p>
+          </div>
+        </section>
+
+        <section class="reveal">
+          <h2 class="section-label">Experience</h2>
+          <div class="exp-item">
+            <div class="exp-header">
+              <h3>Data Science Intern</h3>
+              <span class="exp-meta">Fawry &mdash; Dec 2025 – Jan 2026</span>
+            </div>
+            <ul class="exp-list">
+              <li>Developed NLP-powered sentiment analysis system using LSTM and GRU architectures in TensorFlow/Keras, deployed via REST API using Flask and FastAPI for real-time predictions.</li>
+              <li>Performed financial customer segmentation by applying K-Means clustering and elbow method to identify 5 distinct behavioral patterns from transactional data.</li>
+              <li>Built and optimized a feedforward neural network for handwritten digit classification on MNIST dataset.</li>
+              <li>Engineered predictive models for retail customer spending using Linear Regression with extensive feature engineering.</li>
+              <li>Conducted comprehensive data cleaning and visualization using Pandas, NumPy, and Seaborn.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="reveal">
+          <h2 class="section-label">Training</h2>
+          <div class="training-list">
+            <div class="training-item">
+              <div class="training-header">
+                <h3>Generative AI Intern — Advanced</h3>
+                <span class="training-meta">ITI, NVIDIA DLI &mdash; Feb 2026</span>
+              </div>
+              <p class="training-desc">100 hours. Deep Learning Basics, Building RAG Agents With LLMs, Capstone Project.</p>
+            </div>
+            <div class="training-item">
+              <div class="training-header">
+                <h3>Data Analysis Intern</h3>
+                <span class="training-meta">NTI &mdash; Jun – Sep 2025</span>
+              </div>
+              <p class="training-desc">90 hours. Data cleaning, EDA, dashboards using Python, SQL, Power BI, SSIS.</p>
+            </div>
+            <div class="training-item">
+              <div class="training-header">
+                <h3>Generative AI Intern — Beginner</h3>
+                <span class="training-meta">ITI, NVIDIA DLI &mdash; Sep 2025</span>
+              </div>
+              <p class="training-desc">35 hours. Generative AI, LLM development, Prompt Engineering, RAG.</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="right-col">
+
+        <section class="reveal">
+          <h2 class="section-label">Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-block">
+              <h4>Languages</h4>
+              <p>Python, SQL, R</p>
+            </div>
+            <div class="skill-block">
+              <h4>ML / DL</h4>
+              <p>TensorFlow, Keras, PyTorch, scikit-learn, Hugging Face</p>
+            </div>
+            <div class="skill-block">
+              <h4>Data & Visualization</h4>
+              <p>Pandas, NumPy, Matplotlib, Seaborn, Power BI</p>
+            </div>
+            <div class="skill-block">
+              <h4>NLP & LLMs</h4>
+              <p>LangChain, Sentence Transformers, Prompt Engineering, RAG, RoBERTa, LSTM/GRU</p>
+            </div>
+            <div class="skill-block">
+              <h4>Web & Deployment</h4>
+              <p>FastAPI, Flask, Streamlit, Gradio, Git</p>
+            </div>
+            <div class="skill-block">
+              <h4>Tools</h4>
+              <p>Chroma DB, Vector Stores, SSIS, OpenRouter API</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="reveal">
+          <h2 class="section-label">Certifications</h2>
+          <ul class="cert-list">
+            <li>Building RAG Agents with LLMs — NVIDIA Deep Learning Institute</li>
+            <li>Building LLM Applications With Prompt Engineering — NVIDIA DLI</li>
+            <li>Deep Learning With PyTorch: From Concepts to Applications — Mahara Tech</li>
+            <li>AI and Machine Learning — Sprints</li>
+            <li>Introduction to Deep Learning — Mahara Tech</li>
+            <li>AI for All: From Basics to GenAI Practice — NVIDIA Academy</li>
           </ul>
-        </div>
+        </section>
+
       </div>
     </div>
-  </section>
 
-  <!-- DIVIDER -->
-  <div class="section-divider"><span>§ 02 — PROJECTS</span></div>
+    <hr class="divider">
 
-  <!-- PROJECTS -->
-  <section class="projects-section reveal" id="projects">
+    <!-- PROJECTS -->
+    <section class="projects-section">
+      <h2 class="section-label reveal">Projects</h2>
 
-    <article class="project-card reveal" data-num="01">
-      <div class="project-num">01</div>
-      <div class="project-content">
-        <div class="project-top">
-          <h3 class="project-title">SMART CONTRACT<br>SUMMARY &amp; Q&amp;A</h3>
-          <a href="https://github.com/z3yad30/Contract-Summary-Q-A-Assistant" target="_blank" rel="noopener noreferrer" class="project-link-btn">VIEW →</a>
-        </div>
-        <p class="project-desc">End-to-end RAG system for legal document analysis. Intelligent chunking, semantic search, local vector store with sentence transformers, conversational Q&amp;A with inline citations.</p>
-        <div class="project-stack">
-          <span>PYTHON</span><span>LANGCHAIN</span><span>RAG</span><span>OPENROUTER</span><span>GRADIO</span><span>CHROMA DB</span>
-        </div>
+      <div class="projects-list">
+        <article class="project-item reveal">
+          <div class="project-main">
+            <h3>Smart Contract Summary & Q&A Assistant</h3>
+            <p class="project-tech">Python, LangChain, RAG, OpenRouter, Gradio, Chroma DB</p>
+            <p class="project-desc">
+              End-to-end RAG system for legal document analysis. Intelligent chunking, semantic search, 
+              local vector store with sentence transformers, conversational Q&A with inline citations. 
+              Production-grade Gradio web app with document upload and one-click summarization.
+            </p>
+          </div>
+          <a href="https://github.com/z3yad30/Contract-Summary-Q-A-Assistant" target="_blank" class="project-link">
+            View on GitHub <i class="fas fa-arrow-up-right-from-square"></i>
+          </a>
+        </article>
+
+        <article class="project-item reveal">
+          <div class="project-main">
+            <h3>IMDB Sentiment Analysis API</h3>
+            <p class="project-tech">RoBERTa, FastAPI, Transformers, PyTorch, HTML/CSS/JS</p>
+            <p class="project-desc">
+              Production-ready REST API using fine-tuned RoBERTa-large, 93–95% accuracy on IMDB test dataset. 
+              FastAPI backend with Pydantic validation, single and batch predictions, confidence scoring. 
+              Responsive frontend with real-time analysis and probability distribution visualization.
+            </p>
+          </div>
+          <a href="https://github.com/z3yad30/roberta-large-sentiment-imdb" target="_blank" class="project-link">
+            View on GitHub <i class="fas fa-arrow-up-right-from-square"></i>
+          </a>
+        </article>
+
+        <article class="project-item reveal">
+          <div class="project-main">
+            <h3>Bank Customer Segmentation & Clustering</h3>
+            <p class="project-tech">K-Means, PCA, Streamlit, scikit-learn, Plotly</p>
+            <p class="project-desc">
+              Unsupervised ML on 45,211 bank customers, identified 5 behavioral segments for targeted marketing. 
+              Compared K-Means, DBSCAN and Hierarchical Clustering with silhouette and Davies-Bouldin metrics. 
+              Interactive Streamlit web app for real-time classification and segment profiling.
+            </p>
+          </div>
+          <a href="https://github.com/z3yad30/bank-customer-segmentation-clustering" target="_blank" class="project-link">
+            View on GitHub <i class="fas fa-arrow-up-right-from-square"></i>
+          </a>
+        </article>
       </div>
-    </article>
+    </section>
 
-    <article class="project-card reveal" data-num="02">
-      <div class="project-num">02</div>
-      <div class="project-content">
-        <div class="project-top">
-          <h3 class="project-title">IMDB SENTIMENT<br>ANALYSIS API</h3>
-          <a href="https://github.com/z3yad30/roberta-large-sentiment-imdb" target="_blank" rel="noopener noreferrer" class="project-link-btn">VIEW →</a>
-        </div>
-        <p class="project-desc">Production REST API using fine-tuned RoBERTa-large — 93–95% accuracy. FastAPI backend, Pydantic validation, batch predictions, confidence scoring, responsive frontend.</p>
-        <div class="project-stack">
-          <span>ROBERTA</span><span>FASTAPI</span><span>PYTORCH</span><span>TRANSFORMERS</span><span>HTML/CSS/JS</span>
-        </div>
+    <hr class="divider">
+
+    <!-- FOOTER -->
+    <footer class="reveal">
+      <p class="footer-copy">© <span id="year"></span> Zeyad Mohamed Ahmed Refaey</p>
+      <div class="footer-links">
+        <a href="https://github.com/z3yad30" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/zeyad-refaey" target="_blank">LinkedIn</a>
+        <a href="mailto:zeyad.mo.refaey@gmail.com">Email</a>
       </div>
-    </article>
+    </footer>
 
-    <article class="project-card reveal" data-num="03">
-      <div class="project-num">03</div>
-      <div class="project-content">
-        <div class="project-top">
-          <h3 class="project-title">BANK CUSTOMER<br>SEGMENTATION</h3>
-          <a href="https://github.com/z3yad30/bank-customer-segmentation-clustering" target="_blank" rel="noopener noreferrer" class="project-link-btn">VIEW →</a>
-        </div>
-        <p class="project-desc">Unsupervised ML on 45,211 bank customers — 5 behavioral segments for targeted marketing. K-Means vs DBSCAN vs Hierarchical, interactive Streamlit app.</p>
-        <div class="project-stack">
-          <span>K-MEANS</span><span>PCA</span><span>STREAMLIT</span><span>SCIKIT-LEARN</span><span>PLOTLY</span>
-        </div>
-      </div>
-    </article>
-
-  </section>
-
-  <!-- DIVIDER -->
-  <div class="section-divider"><span>§ 03 — SKILLS &amp; STACK</span></div>
-
-  <!-- SKILLS -->
-  <section class="skills-section reveal" id="skills">
-    <div class="skills-grid">
-
-      <div class="skill-group">
-        <div class="skill-group-label">LANGUAGES</div>
-        <div class="skill-tags">
-          <span>PYTHON</span><span>SQL</span><span>R</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <div class="skill-group-label">ML / DL</div>
-        <div class="skill-tags">
-          <span>TENSORFLOW</span><span>KERAS</span><span>PYTORCH</span><span>SCIKIT-LEARN</span><span>HUGGING FACE</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <div class="skill-group-label">NLP &amp; LLMs</div>
-        <div class="skill-tags">
-          <span>LANGCHAIN</span><span>SENTENCE TRANSFORMERS</span><span>PROMPT ENG.</span><span>RAG</span><span>ROBERTA</span><span>LSTM/GRU</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <div class="skill-group-label">DATA &amp; VIZ</div>
-        <div class="skill-tags">
-          <span>PANDAS</span><span>NUMPY</span><span>MATPLOTLIB</span><span>SEABORN</span><span>POWER BI</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <div class="skill-group-label">WEB &amp; DEPLOY</div>
-        <div class="skill-tags">
-          <span>FASTAPI</span><span>FLASK</span><span>STREAMLIT</span><span>GRADIO</span><span>GIT</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <div class="skill-group-label">TOOLS</div>
-        <div class="skill-tags">
-          <span>CHROMA DB</span><span>VECTOR STORES</span><span>SSIS</span><span>OPENROUTER API</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- DIVIDER -->
-  <div class="section-divider"><span>§ 04 — TRAINING &amp; CERTS</span></div>
-
-  <!-- TRAINING -->
-  <section class="training-section reveal" id="training">
-    <div class="training-grid">
-
-      <div class="training-item reveal">
-        <div class="training-dot"></div>
-        <div class="training-body">
-          <div class="training-date">FEB 2026</div>
-          <div class="training-title">GENERATIVE AI INTERN — ADVANCED</div>
-          <div class="training-org">ITI × NVIDIA DLI — 100 HRS</div>
-          <div class="training-desc">Deep Learning Basics · Building RAG Agents With LLMs · Capstone Project</div>
-        </div>
-      </div>
-
-      <div class="training-item reveal">
-        <div class="training-dot"></div>
-        <div class="training-body">
-          <div class="training-date">SEP 2025</div>
-          <div class="training-title">GENERATIVE AI INTERN — BEGINNER</div>
-          <div class="training-org">ITI × NVIDIA DLI — 35 HRS</div>
-          <div class="training-desc">Generative AI · LLM Development · Prompt Engineering · RAG</div>
-        </div>
-      </div>
-
-      <div class="training-item reveal">
-        <div class="training-dot"></div>
-        <div class="training-body">
-          <div class="training-date">JUN – SEP 2025</div>
-          <div class="training-title">DATA ANALYSIS INTERN</div>
-          <div class="training-org">NTI — 90 HRS</div>
-          <div class="training-desc">Data cleaning · EDA · Dashboards — Python · SQL · Power BI · SSIS</div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- CERTS -->
-    <div class="certs-block">
-      <div class="certs-label">CERTIFICATIONS</div>
-      <ul class="certs-list">
-        <li><span class="cert-src">NVIDIA DLI</span> Building RAG Agents with LLMs</li>
-        <li><span class="cert-src">NVIDIA DLI</span> Building LLM Applications With Prompt Engineering</li>
-        <li><span class="cert-src">MAHARA TECH</span> Deep Learning With PyTorch: From Concepts to Applications</li>
-        <li><span class="cert-src">SPRINTS</span> AI and Machine Learning</li>
-        <li><span class="cert-src">MAHARA TECH</span> Introduction to Deep Learning</li>
-        <li><span class="cert-src">NVIDIA ACADEMY</span> AI for All: From Basics to GenAI Practice</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-top">
-      <div class="footer-big">LET'S BUILD<br>SOMETHING.</div>
-      <div class="footer-contact">
-        <a href="mailto:zeyad.mo.refaey@gmail.com" class="btn-brutal">SEND EMAIL →</a>
-        <a href="https://linkedin.com/in/zeyadrefaey" target="_blank" rel="noopener noreferrer" class="btn-brutal btn-ghost">LINKEDIN →</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© <span id="year"></span> ZEYAD REFAEY — CAIRO, EGYPT</span>
-      <div class="footer-nav">
-        <a href="https://github.com/z3yad30" target="_blank" rel="noopener noreferrer">GITHUB</a>
-        <a href="https://linkedin.com/in/zeyadrefaey" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
-        <a href="mailto:zeyad.mo.refaey@gmail.com">EMAIL</a>
-      </div>
-    </div>
-  </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
